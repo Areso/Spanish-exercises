@@ -55,7 +55,6 @@
 			path_to_load = selector.value+".js"
 			console.log(path_to_load);
 			include(path_to_load,function(){
-				//console.log();
 				loadLesson();
 			});
 		}
@@ -94,10 +93,26 @@
 			if (selector.value==="regular_verbs"){
 				correct_ans  = rules[noun_counter].noun+" "+cards[posTr].tgt.substring(0, cards[posTr].tgt.length-2)
 				correct_ans += rules[noun_counter].ans.substring(1, rules[noun_counter].ans.length);
-				if (txtAns.value.toLowerCase() === correct_ans) {
+				correct_ans_lc  = correct_ans.toLowerCase();
+				correct_ans_nd  = correct_ans_lc.replace("ú","u");
+				correct_ans_nd  = correct_ans_nd.replace("á","a");
+				correct_ans_nd  = correct_ans_nd.replace("á","a");
+				correct_ans_nd  = correct_ans_nd.replace("í","i");
+				correct_ans_nd  = correct_ans_nd.replace("é","e");
+				prov_ans_lc     = txtAns.value.toLowerCase();
+				prov_ans_nd     = prov_ans_lc.replace("ú","u");
+				prov_ans_nd     = prov_ans_nd.replace("á","a");
+				prov_ans_nd     = prov_ans_nd.replace("á","a");
+				prov_ans_nd     = prov_ans_nd.replace("í","i");
+				prov_ans_nd     = prov_ans_nd.replace("é","e");
+				if (prov_ans_lc === correct_ans_lc) {
 					txtRes.innerText="True!"
 				} else {
-					txtRes.innerHTML = "False! Correst answer is "+correct_ans;
+					if (prov_ans_nd === correct_ans_nd) {
+						txtRes.innerText="Truish, but pay attention to diacretic symbols!"
+					} else {
+						txtRes.innerHTML = "False! Correst answer is "+correct_ans;
+					}
 				}
 			} else {
 				if (inArray(txtAns.value, cards[posTr].answers)){
@@ -106,8 +121,14 @@
 					txtRes.innerHTML = "False! Correst answer is "+cards[posTr].answers[0]+"<br>"+cards[posTr].tgt;
 				}
 			}
-			if (posTr === cards.length-1) {
+			if (selector.value==="regular_verbs"){
+				if (posTr === cards.length-1 && noun_counter === 11) {
 					btnNextQst.style = "display: none";
+				}
+			} else {
+				if (posTr === cards.length-1) {
+					btnNextQst.style = "display: none";
+				}
 			}
 			if (noun_counter===11){
 				posTr         = posTr+1;

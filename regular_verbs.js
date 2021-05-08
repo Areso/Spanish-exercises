@@ -1,4 +1,4 @@
-rules = [
+rules = {"1st":[
 {"qst":"I",
  "conj": "1st",
  "noun": "yo",
@@ -58,8 +58,8 @@ rules = [
  "conj": "1st",
  "noun": "ustedes",
  "ans":"-an"
-},
-]
+}
+]}
 cards = [
 {"tgt":"trabajar",
  "conj": "1st",

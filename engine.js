@@ -9,7 +9,7 @@ btnCheck = document.getElementById("btnCheck");
 btnTrain = document.getElementById("btnTrain");
 btnNextMemo  = document.getElementById("btnNextMemo");
 btnNextQst   = document.getElementById("btnNextQst");
-divSelTopic = document.getElementById("divTopicSelector");
+divSelTopic  = document.getElementById("divTopicSelector");
 divTopic = document.getElementById("divTopic");
 selector = document.getElementById("topicSelector");
 //JS INIT
@@ -46,15 +46,15 @@ function nextCard() {
 	}
 }
 function loadTraining() {
-	posTr = 0;
+	card_id = 0;
 	btnTrain.style     = "display: none";
 	btnNextMemo.style  = "display: none";
 	btnCheck.style     = "display: block";
 	txtAns.style       = "display: block";
 	txtAns.value       = "";
 	btnNextQst.style   = "display: block";
-	if (selector==="regular_verbs"){
-		noun_counter = 0
+	if (selector.value==="regular_verbs"){
+		form_counter = 0;
 	}
 	nextQuestion();
 }
@@ -65,7 +65,7 @@ function nextQuestion() {
 		txtRes.innerText = "";
 		txtAns.value     = "";
 		tgtLng.innerText = "";
-		ntvLng.innerText = rules[noun_counter].qst+" "+cards[posTr].qst;
+		ntvLng.innerText = rules[cards[card_id].conj][form_counter]["qst"]+" "+cards[card_id].ntv;
 	}
 }
 function check() {

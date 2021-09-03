@@ -62,7 +62,7 @@ rules = {"1st":[
 ]}
 cards = [
 {"tgt":"trabajar",
- "ntv":"work",
+ "ntv":"to work",
  "conj": "1st",
  "img":"to_work.png"},
 ]

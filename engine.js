@@ -42,7 +42,7 @@ function nextCard() {
 	}
 	if (posRe === cards.length-1) {
 		btnNextMemo.style  = "display: none";
-		btnTrain.style = "display: block";
+		btnTrain.style     = "display: block";
 	}
 }
 function loadTraining() {
@@ -59,20 +59,23 @@ function loadTraining() {
 	nextQuestion();
 }
 function nextQuestion() {
-	console.log("try to summup a question");
 	if (selector.value==="regular_verbs"){
 		console.log("try to summup a question");
 		txtRes.innerText = "";
 		txtAns.value     = "";
 		tgtLng.innerText = "";
-		ntvLng.innerText = rules[cards[card_id].conj][form_counter]["qst"]+" "+cards[card_id].ntv;
+		//now we are dropping 'to' from the english card translation
+		//for example, 'to work'. We are dropping first three symbols 'to '
+		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].tgt.length)
+		conj_group       = cards[card_id].conj
+		ntvLng.innerText = rules[conj_group][form_counter]["qst"]+" "+ntv_verb;
 	}
 }
 function check() {
 	if (selector.value==="regular_verbs"){
 		conj = cards[posTr].conj;
-		correct_ans  = rules[conj][noun_counter].noun+" "+cards[posTr].tgt.substring(0, cards[posTr].tgt.length-2)
-		correct_ans += rules[conj][noun_counter].ans.substring(1, rules[conj][noun_counter].ans.length);
+		correct_ans  = rules[conj][form_counter].noun+" "+cards[card_id].tgt.substring(0, cards[card_id].tgt.length-2)
+		correct_ans += rules[conj][form_counter].ans.substring(1, rules[conj][form_counter].ans.length);
 		correct_ans_lc  = correct_ans.toLowerCase();
 		correct_ans_nd  = correct_ans_lc.replace("ú","u");
 		correct_ans_nd  = correct_ans_nd.replace("á","a");

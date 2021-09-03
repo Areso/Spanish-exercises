@@ -95,27 +95,21 @@ function check() {
 			}
 		}
 	} 
-	/*else {
-		if (inArray(txtAns.value, cards[posTr].answers)){
-			txtRes.innerText="True!"
-		} else {
-		txtRes.innerHTML = "False! Correst answer is "+cards[posTr].answers[0]+"<br>"+cards[posTr].tgt;
-		}
-	}*/
+	
 	if (selector.value==="regular_verbs"){
-		if (posTr === cards.length-1 && noun_counter === 11) {
+		if (card_id === cards.length-1 && form_counter === 11) {
 			btnNextQst.style = "display: none";
 		}
 	} else {
-		if (posTr === cards.length-1) {
+		if (card_id === cards.length-1) {
 			btnNextQst.style = "display: none";
 		}
 	}
-	if (noun_counter===11){
-		posTr         = posTr+1;
-		noun_counter  = 0;
+	if (form_counter===11){
+		card_id       = card_id+1;
+		form_counter  = 0;
 	} else {
-		noun_counter += 1;
+		form_counter += 1;
 	}
 }
 //HELPERS

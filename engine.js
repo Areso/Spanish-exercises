@@ -69,6 +69,8 @@ function nextQuestion() {
 		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].tgt.length)
 		conj_group       = cards[card_id].conj
 		ntvLng.innerText = rules[conj_group][form_counter]["qst"]+" "+ntv_verb;
+		btnCheck.style   = "display: block";
+		btnNextQst.style = "display: none";
 	}
 }
 function check() {
@@ -97,11 +99,13 @@ function check() {
 				txtRes.innerHTML = "False! Correst answer is "+correct_ans;
 			}
 		}
-	} 
+		btnCheck.style  = "display: none";
+	}
 	
 	if (selector.value==="regular_verbs"){
 		if (card_id === cards.length-1 && form_counter === 11) {
 			btnNextQst.style = "display: none";
+			//TODO make return to Main Menu button there!
 		}
 	} else {
 		if (card_id === cards.length-1) {

@@ -196,4 +196,8 @@ cards = [
  "ntv":"to write",
  "conj": "3rd",
  "img":"to_write.png"},
+{"tgt":"abrir",
+ "ntv":"to open",
+ "conj": "3rd",
+ "img":"to_open.png"},
 ]

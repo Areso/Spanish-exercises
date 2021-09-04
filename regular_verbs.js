@@ -121,6 +121,67 @@ rules = {"1st":[
  "noun": "ustedes",
  "ans":"-en"
 }],
+"3rd":[
+{"qst":"I",
+ "conj": "3rd",
+ "noun": "yo",
+ "ans":"-o"
+},
+{"qst":"you (informal)",
+ "conj": "3rd",
+ "noun": "tú",
+ "ans":"-es"
+},
+{"qst":"he",
+ "conj": "3rd",
+ "noun": "él",
+ "ans":"-e"
+},
+{"qst":"she",
+ "conj": "3rd",
+ "noun": "ella",
+ "ans":"-e"
+},
+{"qst":"you (formal)",
+ "conj": "3rd",
+ "noun": "usted",
+ "ans":"-e"
+},
+{"qst":"we (musculine)",
+ "conj": "3rd",
+ "noun": "nosotros",
+ "ans":"-imos"
+},
+{"qst":"we (feminine)",
+ "conj": "3rd",
+ "noun": "nosotras",
+ "ans":"-imos"
+},
+{"qst":"you (plural, musculine)",
+ "conj": "3rd",
+ "noun": "vosotros",
+ "ans":"-ís"
+},
+{"qst":"you (plural, feminine)",
+ "conj": "3rd",
+ "noun": "vosotras",
+ "ans":"-ís"
+},
+{"qst":"they (musculine)",
+ "conj": "3rd",
+ "noun": "ellos",
+ "ans":"-en"
+},
+{"qst":"they (feminine)",
+ "conj": "3rd",
+ "noun": "ellas",
+ "ans":"-en"
+},
+{"qst":"you (plural, formal)",
+ "conj": "3rd",
+ "noun": "ustedes",
+ "ans":"-en"
+}]
 }
 cards = [
 {"tgt":"trabajar",
@@ -131,4 +192,8 @@ cards = [
  "ntv":"to eat",
  "conj": "2nd",
  "img":"to_eat.png"},
+{"tgt":"escribir",
+ "ntv":"to write",
+ "conj": "3rd",
+ "img":"to_write.png"},
 ]

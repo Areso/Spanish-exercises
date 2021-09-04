@@ -69,7 +69,7 @@ function nextQuestion() {
 		//for example, 'to work'. We are dropping first three symbols 'to '
 		conj_group       = cards[card_id].conj;
 		pronoun          = rules[conj_group][form_counter]["qst"]
-		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].tgt.length);
+		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].ntv.length);
 		if (pronoun === "he" || pronoun === "she") {
 			ntv_verb     = ntv_verb+"s"; //he/she works!
 		}

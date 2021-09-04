@@ -1,5 +1,5 @@
 //DOM OBJECTS
-topic    = document.getElementById("textTopic");
+topicLbl = document.getElementById("textTopic");
 tgtLng   = document.getElementById("textTgtLng");
 ntvLng   = document.getElementById("textNtvLng");
 mnImg    = document.getElementById("image");
@@ -29,8 +29,9 @@ function loadSelectedTopic() {
 	});
 }
 function loadLesson() {
-	tgtLng.innerText = cards[posRe].tgt;
-	ntvLng.innerText = cards[posRe].ntv;
+	topicLbl.innerText = topicName;
+	tgtLng.innerText   = cards[posRe].tgt;
+	ntvLng.innerText   = cards[posRe].ntv;
 }
 function nextCard() {
 	console.log(cards.length);
@@ -102,6 +103,7 @@ function check() {
 		btnCheck.style  = "display: none";
 	}
 	
+	btnNextQst.style = "display: block";
 	if (selector.value==="regular_verbs"){
 		if (card_id === cards.length-1 && form_counter === 11) {
 			btnNextQst.style = "display: none";

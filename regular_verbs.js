@@ -1,3 +1,4 @@
+topicName = "Regular verbs";
 rules = {"1st":[
 {"qst":"I",
  "conj": "1st",
@@ -58,11 +59,76 @@ rules = {"1st":[
  "conj": "1st",
  "noun": "ustedes",
  "ans":"-an"
+}],
+"2nd":[
+{"qst":"I",
+ "conj": "2nd",
+ "noun": "yo",
+ "ans":"-o"
+},
+{"qst":"you (informal)",
+ "conj": "2nd",
+ "noun": "tú",
+ "ans":"-es"
+},
+{"qst":"he",
+ "conj": "2nd",
+ "noun": "él",
+ "ans":"-e"
+},
+{"qst":"she",
+ "conj": "2nd",
+ "noun": "ella",
+ "ans":"-e"
+},
+{"qst":"you (formal)",
+ "conj": "2nd",
+ "noun": "usted",
+ "ans":"-e"
+},
+{"qst":"we (musculine)",
+ "conj": "2nd",
+ "noun": "nosotros",
+ "ans":"-emos"
+},
+{"qst":"we (feminine)",
+ "conj": "2nd",
+ "noun": "nosotras",
+ "ans":"-emos"
+},
+{"qst":"you (plural, musculine)",
+ "conj": "2nd",
+ "noun": "vosotros",
+ "ans":"-éis"
+},
+{"qst":"you (plural, feminine)",
+ "conj": "2nd",
+ "noun": "vosotras",
+ "ans":"-éis"
+},
+{"qst":"they (musculine)",
+ "conj": "2nd",
+ "noun": "ellos",
+ "ans":"-en"
+},
+{"qst":"they (feminine)",
+ "conj": "2nd",
+ "noun": "ellas",
+ "ans":"-en"
+},
+{"qst":"you (plural, formal)",
+ "conj": "2nd",
+ "noun": "ustedes",
+ "ans":"-en"
+}],
 }
-]}
 cards = [
 {"tgt":"trabajar",
  "ntv":"to work",
  "conj": "1st",
  "img":"to_work.png"},
+{"tgt":"comer",
+ "ntv":"to eat",
+ "conj": "2nd",
+ "img":"to_eat.png"},
 ]

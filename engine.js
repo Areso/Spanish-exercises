@@ -67,9 +67,13 @@ function nextQuestion() {
 		tgtLng.innerText = "";
 		//now we are dropping 'to' from the english card translation
 		//for example, 'to work'. We are dropping first three symbols 'to '
-		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].tgt.length)
-		conj_group       = cards[card_id].conj
-		ntvLng.innerText = rules[conj_group][form_counter]["qst"]+" "+ntv_verb;
+		conj_group       = cards[card_id].conj;
+		pronoun          = rules[conj_group][form_counter]["qst"]
+		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].tgt.length);
+		if (pronoun === "he" || pronoun === "she") {
+			ntv_verb     = ntv_verb+"s"; //he/she works!
+		}
+		ntvLng.innerText = pronoun+" "+ntv_verb;
 		btnCheck.style   = "display: block";
 		btnNextQst.style = "display: none";
 	}

@@ -55,7 +55,8 @@ function loadTraining() {
 	txtAns.style       = "display: block";
 	txtAns.value       = "";
 	btnNextQst.style   = "display: block";
-	if (true) {//FOR DEBUG!
+	smallPractice      = true;
+	if (smallPractice) {//FOR DEBUG!
 		console.log("build a custom deck to train it");
 		if (cards.length>3) {
 			number_of_cards_to_train = 3;
@@ -82,6 +83,7 @@ function loadTraining() {
 				card_id_deck_iterator  = 0;
 			} 
 		}
+		card_id = cards_deck[0];
 	}
 	console.log("show me my deck");
 	console.log(cards_deck);
@@ -144,22 +146,54 @@ function check() {
 	}
 	
 	btnNextQst.style = "display: block";
+	//END OF THE CARD
 	if (selector.value==="regular_verbs"){
-		if (card_id === cards.length-1 && form_counter === 11) {
-			btnNextQst.style = "display: none";
-			//TODO make return to Main Menu button there!
-		}
-	} else {
-		if (card_id === cards.length-1) {
-			btnNextQst.style = "display: none";
+		if (!smallPractice){
+			if (form_counter===11){
+				card_id       = card_id+1;
+				form_counter  = 0;
+			} else {
+				form_counter += 1;
+			}
+		} else {
+			if (form_counter===11){
+				if (cards_deck.length>0){
+					cards_deck.shift();
+					card_id = cards_deck[0];
+				}
+				form_counter  = 0;
+			} else {
+				form_counter += 1;
+			}
+			
+			
 		}
 	}
-	if (form_counter===11){
-		card_id       = card_id+1;
-		form_counter  = 0;
+	//END OF TRAINING
+	if (selector.value==="regular_verbs"){
+		if (!smallPractice){
+			if (card_id === cards.length-1 && form_counter === 11) {
+				btnNextQst.style = "display: none";
+				//TODO make return to Main Menu button there!
+			}
+		} else {
+			if (cards_deck.length === 0 && form_counter === 11) {
+				btnNextQst.style = "display: none";
+				//TODO make return to Main Menu button there!
+			}
+		}
 	} else {
-		form_counter += 1;
+		if (!smallPractice){
+			if (card_id === cards.length-1) {
+				btnNextQst.style = "display: none";
+			}
+		} else {
+			if (cards_deck.length === 0) {
+				btnNextQst.style = "display: none";
+			}
+		}
 	}
+
 }
 //HELPERS
 function inArray2(arrayToCheck, valueToCheck) {

@@ -1,5 +1,6 @@
 topicName = "Regular verbs";
-rules = {"1st":[
+rules = {
+"1st":[
 {"qst":"I",
  "conj": "1st",
  "noun": "yo",

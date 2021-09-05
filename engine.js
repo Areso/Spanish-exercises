@@ -80,7 +80,7 @@ function nextQuestion() {
 }
 function check() {
 	if (selector.value==="regular_verbs"){
-		conj = cards[posTr].conj;
+		conj = cards[card_id].conj;
 		correct_ans  = rules[conj][form_counter].noun+" "+cards[card_id].tgt.substring(0, cards[card_id].tgt.length-2)
 		correct_ans += rules[conj][form_counter].ans.substring(1, rules[conj][form_counter].ans.length);
 		correct_ans_lc  = correct_ans.toLowerCase();

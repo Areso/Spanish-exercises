@@ -14,7 +14,6 @@ divTopic = document.getElementById("divTopic");
 selector = document.getElementById("topicSelector");
 //JS INIT
 posRe = 0;
-posTr = 0;
 topic = 0;
 noun_counter = 0;
 //ENTRY POINT

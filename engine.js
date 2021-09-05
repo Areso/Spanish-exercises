@@ -18,10 +18,10 @@ topic = 0;
 noun_counter = 0;
 //ENTRY POINT
 function loadSelectedTopic() {
-	divSelTopic.style="display: none";
-	divTopic.style="display: block";
+	divSelTopic.style  = "display: none";
+	divTopic.style     = "display: block";
 	console.log(selector);
-	path_to_load = selector.value+".js"
+	path_to_load       = selector.value+".js"
 	console.log(path_to_load);
 	include(path_to_load,function(){
 		loadLesson();
@@ -33,7 +33,6 @@ function loadLesson() {
 	ntvLng.innerText   = cards[posRe].ntv;
 }
 function nextCard() {
-	console.log(cards.length);
 	if (posRe <= cards.length-2) {
 		posRe     = posRe + 1;
 		tgtLng.innerText = cards[posRe].tgt;
@@ -45,6 +44,9 @@ function nextCard() {
 		btnTrain.style     = "display: block";
 	}
 }
+function loadTrainingDbg() {
+	loadTraining();
+}
 function loadTraining() {
 	card_id = 0;
 	btnTrain.style     = "display: none";
@@ -53,6 +55,37 @@ function loadTraining() {
 	txtAns.style       = "display: block";
 	txtAns.value       = "";
 	btnNextQst.style   = "display: block";
+	if (true) {//FOR DEBUG!
+		console.log("build a custom deck to train it");
+		if (cards.length>3) {
+			number_of_cards_to_train = 3;
+		} else {
+			number_of_cards_to_train = cards.length;
+		}
+		console.log("number of custom deck cards");
+		console.log(number_of_cards_to_train);
+		number_cards_in_deck       = 0;
+		cards_deck                 = [];
+		card_id_deck_iterator      = 0;
+		while (number_cards_in_deck < number_of_cards_to_train) {
+			roll_the_dice          = Math.floor(Math.random()*cards.length);
+			if (roll_the_dice === 0) {
+				//check whether this card is already added or not?
+				if (!inArray2(cards_deck,card_id_deck_iterator)){
+					cards_deck.push(card_id_deck_iterator);
+					number_cards_in_deck  += 1;
+				}
+			}
+			if (card_id_deck_iterator<cards.length-1){
+				card_id_deck_iterator += 1;
+			} else {
+				card_id_deck_iterator  = 0;
+			} 
+		}
+	}
+	console.log("show me my deck");
+	console.log(cards_deck);
+
 	if (selector.value==="regular_verbs"){
 		form_counter = 0;
 	}
@@ -129,9 +162,10 @@ function check() {
 	}
 }
 //HELPERS
+function inArray2(arrayToCheck, valueToCheck) {
+	return arrayToCheck.indexOf(valueToCheck) > -1;
+}
 function inArray(needle,haystack){
-	console.log(needle)
-	console.log(haystack)
 	count=haystack.length;
 	for(var i=0;i<count;i++){
 		if(haystack[i]===needle){return true;}

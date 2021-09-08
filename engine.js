@@ -128,6 +128,8 @@ function check() {
 		prov_ans_lc     = prov_ans_lc.split('\n');
 		//use only first line
 		prov_ans_lc     = prov_ans_lc[0];
+		//trim the line
+		prov_ans_lc     = prov_ans_lc.trim();
 		prov_ans_nd     = prov_ans_lc.replace("ú","u");
 		prov_ans_nd     = prov_ans_nd.replace("á","a");
 		prov_ans_nd     = prov_ans_nd.replace("á","a");

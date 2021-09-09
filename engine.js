@@ -28,33 +28,16 @@ function loadSelectedTopic() {
 	});
 }
 function loadLesson() {
+	buildDeck();
 	topicLbl.innerText = topicName;
-	tgtLng.innerText   = cards[posRe].tgt;
-	ntvLng.innerText   = cards[posRe].ntv;
-}
-function nextCard() {
-	if (posRe <= cards.length-2) {
-		posRe     = posRe + 1;
-		tgtLng.innerText = cards[posRe].tgt;
-		ntvLng.innerText = cards[posRe].ntv;
-		//mnImg.innerHTML = "<img src='"+cards[posRe].img+"'>";
-	}
-	if (posRe === cards.length-1) {
-		btnNextMemo.style  = "display: none";
-		btnTrain.style     = "display: block";
+	tgtLng.innerText   = cards[card_id].tgt;
+	ntvLng.innerText   = cards[card_id].ntv;
+	cards_deck_learn   = new Array();
+	for (i=0;i<cards_deck.length;i++){
+		cards_deck_learn.push(cards_deck[i])
 	}
 }
-function loadTrainingDbg() {
-	loadTraining();
-}
-function loadTraining() {
-	card_id = 0;
-	btnTrain.style     = "display: none";
-	btnNextMemo.style  = "display: none";
-	btnCheck.style     = "display: block";
-	txtAns.style       = "display: block";
-	txtAns.value       = "";
-	btnNextQst.style   = "display: block";
+function buildDeck() {
 	smallPractice      = true;
 	if (smallPractice) {//FOR DEBUG!
 		console.log("build a custom deck to train it");
@@ -87,6 +70,31 @@ function loadTraining() {
 	}
 	console.log("show me my deck");
 	console.log(cards_deck);
+}
+function nextCard() {
+	
+	if (cards_deck_learn.length > 1){
+		cards_deck_learn.shift();
+		card_id = cards_deck_learn[0];
+		tgtLng.innerText = cards[card_id].tgt;
+		ntvLng.innerText = cards[card_id].ntv;
+	} else {
+		btnNextMemo.style  = "display: none";
+		btnTrain.style     = "display: block";
+	}
+}
+function loadTraining() {
+	if (smallPractice){
+		card_id = cards_deck[0];
+	} else { 
+		card_id = 0;
+	}
+	btnTrain.style     = "display: none";
+	btnNextMemo.style  = "display: none";
+	btnCheck.style     = "display: block";
+	txtAns.style       = "display: block";
+	txtAns.value       = "";
+	btnNextQst.style   = "display: block";
 
 	if (selector.value==="regular_verbs"){
 		form_counter = 0;
@@ -159,7 +167,7 @@ function check() {
 			}
 		} else {
 			if (form_counter===11){
-				if (cards_deck.length>0){
+				if (cards_deck.length>1){
 					cards_deck.shift();
 					card_id = cards_deck[0];
 				}
@@ -167,8 +175,6 @@ function check() {
 			} else {
 				form_counter += 1;
 			}
-			
-			
 		}
 	}
 	//END OF TRAINING
@@ -195,7 +201,6 @@ function check() {
 			}
 		}
 	}
-
 }
 //HELPERS
 function inArray2(arrayToCheck, valueToCheck) {

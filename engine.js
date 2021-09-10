@@ -36,13 +36,15 @@ function loadLesson() {
 	for (i=0;i<cards_deck.length;i++){
 		cards_deck_learn.push(cards_deck[i])
 	}
+	console.log("show me cards_deck_learn");
+	console.log(cards_deck_learn); 
 }
 function buildDeck() {
 	smallPractice      = true;
 	if (smallPractice) {//FOR DEBUG!
 		console.log("build a custom deck to train it");
-		if (cards.length>3) {
-			number_of_cards_to_train = 3;
+		if (cards.length>2) {
+			number_of_cards_to_train = 2;
 		} else {
 			number_of_cards_to_train = cards.length;
 		}
@@ -68,7 +70,7 @@ function buildDeck() {
 		}
 		card_id = cards_deck[0];
 	}
-	console.log("show me my deck");
+	console.log("show me my deck cards_deck");
 	console.log(cards_deck);
 }
 function nextCard() {
@@ -79,6 +81,7 @@ function nextCard() {
 		tgtLng.innerText = cards[card_id].tgt;
 		ntvLng.innerText = cards[card_id].ntv;
 	} else {
+		cards_deck_learn.shift(); //delete the last item, so the array is empty
 		btnNextMemo.style  = "display: none";
 		btnTrain.style     = "display: block";
 	}
@@ -170,6 +173,8 @@ function check() {
 				if (cards_deck.length>1){
 					cards_deck.shift();
 					card_id = cards_deck[0];
+				} else {
+					cards_deck.shift();
 				}
 				form_counter  = 0;
 			} else {
@@ -180,12 +185,12 @@ function check() {
 	//END OF TRAINING
 	if (selector.value==="regular_verbs"){
 		if (!smallPractice){
-			if (card_id === cards.length-1 && form_counter === 11) {
+			if (card_id === cards.length-1 && form_counter === 0) {
 				btnNextQst.style = "display: none";
 				//TODO make return to Main Menu button there!
 			}
 		} else {
-			if (cards_deck.length === 0 && form_counter === 11) {
+			if (cards_deck.length === 0 && form_counter === 0) {
 				btnNextQst.style = "display: none";
 				//TODO make return to Main Menu button there!
 			}

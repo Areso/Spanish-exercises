@@ -28,14 +28,20 @@ function loadSelectedTopic() {
 	});
 }
 function loadLesson() {
+	console.log(cards);
 	buildDeck();
 	topicLbl.innerText = topicName;
 	tgtLng.innerText   = cards[card_id].tgt;
 	ntvLng.innerText   = cards[card_id].ntv;
+	if (selector.value==="irregular_verbs"){
+		for (form_id=0;form_id<11;form_id++){
+			ntvLng.innerText += cards[card_id].forms[form_id];
+		}
+	}
 	cards_deck_learn   = new Array();
 	for (i=0;i<cards_deck.length;i++){
 		cards_deck_learn.push(cards_deck[i])
-	}
+	}s
 	console.log("show me cards_deck_learn");
 	console.log(cards_deck_learn); 
 }

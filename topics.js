@@ -1,5 +1,6 @@
 topics = [];
 topics.push(["Regular verbs", "regular_verbs"]);
+//topics.push(["Irregular verbs", "irregular_verbs"]);
 function load() {
 	topicSelector = document.getElementById("topicSelector");
 	for(var j in topics)	{

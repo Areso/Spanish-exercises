@@ -115,6 +115,9 @@ function loadTraining() {
 	if (selector.value==="regular_verbs"){
 		form_counter = 0;
 	}
+	if (selector.value==="irregular_verbs"){
+		form_counter = 0;
+	}
 	nextQuestion();
 }
 function nextQuestion() {
@@ -127,6 +130,23 @@ function nextQuestion() {
 		//for example, 'to work'. We are dropping first three symbols 'to '
 		conj_group       = cards[card_id].conj;
 		pronoun          = rules[conj_group][form_counter]["qst"]
+		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].ntv.length);
+		if (pronoun === "he" || pronoun === "she") {
+			ntv_verb     = ntv_verb+"s"; //he/she works!
+		}
+		ntvLng.innerText = pronoun+" "+ntv_verb;
+		btnCheck.style   = "display: block";
+		btnNextQst.style = "display: none";
+	}
+	if (selector.value==="irregular_verbs"){
+		console.log("try to summup a question");
+		txtRes.innerText = "";
+		txtAns.value     = "";
+		tgtLng.innerText = "";
+		//now we are dropping 'to' from the english card translation
+		//for example, 'to work'. We are dropping first three symbols 'to '
+		conj_group       = cards[card_id].conj;
+		pronoun          = cards[card_id]["forms"][form_counter][2]
 		ntv_verb         = cards[card_id].ntv.substring(3, cards[card_id].ntv.length);
 		if (pronoun === "he" || pronoun === "she") {
 			ntv_verb     = ntv_verb+"s"; //he/she works!
@@ -168,9 +188,42 @@ function check() {
 				txtRes.innerHTML = "False! Correst answer is "+correct_ans;
 			}
 		}
-		btnCheck.style  = "display: none";
 	}
-	
+	if (selector.value==="irregular_verbs"){
+		conj = cards[card_id].conj;
+		//noun
+		correct_ans     = cards[card_id]["forms"][form_counter][0];
+		//verb
+		correct_ans    += " "+cards[card_id]["forms"][form_counter][1];
+		correct_ans_lc  = correct_ans.toLowerCase();
+		correct_ans_nd  = correct_ans_lc.replace("ú","u");
+		correct_ans_nd  = correct_ans_nd.replace("á","a");
+		correct_ans_nd  = correct_ans_nd.replace("á","a");
+		correct_ans_nd  = correct_ans_nd.replace("í","i");
+		correct_ans_nd  = correct_ans_nd.replace("é","e");
+		prov_ans_lc     = txtAns.value.toLowerCase();
+		//convert to array of lines
+		prov_ans_lc     = prov_ans_lc.split('\n');
+		//use only first line
+		prov_ans_lc     = prov_ans_lc[0];
+		//trim the line
+		prov_ans_lc     = prov_ans_lc.trim();
+		prov_ans_nd     = prov_ans_lc.replace("ú","u");
+		prov_ans_nd     = prov_ans_nd.replace("á","a");
+		prov_ans_nd     = prov_ans_nd.replace("á","a");
+		prov_ans_nd     = prov_ans_nd.replace("í","i");
+		prov_ans_nd     = prov_ans_nd.replace("é","e");
+		if (prov_ans_lc === correct_ans_lc) {
+			txtRes.innerText="True!"
+		} else {
+			if (prov_ans_nd === correct_ans_nd) {
+				txtRes.innerText="Truish, but pay attention to diacretic symbols!"
+			} else {
+				txtRes.innerHTML = "False! Correst answer is "+correct_ans;
+			}
+		}
+	}
+	btnCheck.style  = "display: none";
 	btnNextQst.style = "display: block";
 	//END OF THE CARD
 	if (selector.value==="regular_verbs"){
@@ -195,8 +248,53 @@ function check() {
 			}
 		}
 	}
+	if (selector.value==="irregular_verbs"){
+		if (!smallPractice){
+			if (form_counter===11){
+				card_id       = card_id+1;
+				form_counter  = 0;
+			} else {
+				form_counter += 1;
+			}
+		} else {
+			if (form_counter===11){
+				if (cards_deck.length>1){
+					cards_deck.shift();
+					card_id = cards_deck[0];
+				} else {
+					cards_deck.shift();
+				}
+				form_counter  = 0;
+			} else {
+				form_counter += 1;
+			}
+		}
+	}
 	//END OF TRAINING
 	if (selector.value==="regular_verbs"){
+		if (!smallPractice){
+			if (card_id === cards.length-1 && form_counter === 0) {
+				btnNextQst.style = "display: none";
+				//TODO make return to Main Menu button there!
+			}
+		} else {
+			if (cards_deck.length === 0 && form_counter === 0) {
+				btnNextQst.style = "display: none";
+				//TODO make return to Main Menu button there!
+			}
+		}
+	} else {
+		if (!smallPractice){
+			if (card_id === cards.length-1) {
+				btnNextQst.style = "display: none";
+			}
+		} else {
+			if (cards_deck.length === 0) {
+				btnNextQst.style = "display: none";
+			}
+		}
+	}
+	if (selector.value==="irregular_verbs"){
 		if (!smallPractice){
 			if (card_id === cards.length-1 && form_counter === 0) {
 				btnNextQst.style = "display: none";

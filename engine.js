@@ -32,16 +32,17 @@ function loadLesson() {
 	buildDeck();
 	topicLbl.innerText = topicName;
 	tgtLng.innerText   = cards[card_id].tgt;
-	ntvLng.innerText   = cards[card_id].ntv;
+	ntvLng.innerHTML   = cards[card_id].ntv;
 	if (selector.value==="irregular_verbs"){
 		for (form_id=0;form_id<11;form_id++){
-			ntvLng.innerText += cards[card_id].forms[form_id];
+			ntvLng.innerHTML += "<br>" + cards[card_id].forms[form_id][0];
+			ntvLng.innerHTML += " "    + cards[card_id].forms[form_id][1];
 		}
 	}
 	cards_deck_learn   = new Array();
 	for (i=0;i<cards_deck.length;i++){
 		cards_deck_learn.push(cards_deck[i])
-	}s
+	}
 	console.log("show me cards_deck_learn");
 	console.log(cards_deck_learn); 
 }
@@ -86,6 +87,12 @@ function nextCard() {
 		card_id = cards_deck_learn[0];
 		tgtLng.innerText = cards[card_id].tgt;
 		ntvLng.innerText = cards[card_id].ntv;
+		if (selector.value==="irregular_verbs"){
+		for (form_id=0;form_id<11;form_id++){
+			ntvLng.innerHTML += "<br>" + cards[card_id].forms[form_id][0];
+			ntvLng.innerHTML += " "    + cards[card_id].forms[form_id][1];
+		}
+	}
 	} else {
 		cards_deck_learn.shift(); //delete the last item, so the array is empty
 		btnNextMemo.style  = "display: none";

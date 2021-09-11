@@ -7,7 +7,8 @@ Just open index.html in your browser (even from the filesystem).
 ## Topics covered
 Regular verbs
 ## Topics in progress
-Irregular verbs
-## Topics planned
+Irregular verbs  
 Irregular regular verbs  
+## Topics planned
 Topics for different places (nouns, adj, verbs)  
+Different modes (arcade, arcade fixed time, 1/3 error left and so on)

@@ -38,7 +38,9 @@ function loadLesson() {
 		textTable_dom.style.display="block";
 		it=0;
 		while (it<6){
-			cells[it].innerHTML=cards[card_id]["ctable"][it]
+			reddish = cards[card_id]["ctable"][it].replace("<r>","<span class='red'>");
+			reddish = reddish.replace("</r>","</span>");
+			cells[it].innerHTML=reddish;
 			it+=1
 		}
 	} else {
@@ -102,7 +104,9 @@ function nextCard() {
 			textTable_dom.style.display="block";
 			it=0;
 			while (it<6){
-				cells[it].innerHTML=cards[card_id]["ctable"][it]
+				reddish = cards[card_id]["ctable"][it].replace("<r>","<span class='red'>");
+				reddish = reddish.replace("</r>","</span>");
+				cells[it].innerHTML=reddish;
 				it+=1
 			}
 		} else {

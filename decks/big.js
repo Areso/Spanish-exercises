@@ -1,6 +1,6 @@
 deckName = "Big";
 cards = [
-{"sp":"poder",
+{"sp":"poder (o->ue)",
  "en": "can/might",
  "sp_ex": "yo puedo ver tú",
  "en_ex": "I can see you",
@@ -10,6 +10,6 @@ cards = [
  "en": "to know",
  "sp_ex": "yo lo sé",
  "en_ex": "I know it",
- "ctable": ["sé","sabes","sabe","podemos","vostoros","podéis","pueden"],
+ "ctable": ["s<r>é</r>","sabes","sabe","podemos","vostoros","podéis","pueden"],
  "img":""}
 ]

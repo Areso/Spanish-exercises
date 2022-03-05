@@ -1,6 +1,7 @@
 //DOM OBJECTS
 topic_dom  = document.getElementById("textTopic");
 img_dom    = document.getElementById("image");
+rl_img_dom = document.getElementById("realImg");
 textSp_dom = document.getElementById("textSp");
 textEn_dom = document.getElementById("textEn");
 textSpEx_dom  = document.getElementById("textSpEx");
@@ -14,10 +15,10 @@ cells.push(document.getElementById("td_you_pl"));
 cells.push(document.getElementById("td_ellos_uds"));
 
 //JS INIT
-posRe = 0;
-topic = 0;
+posRe   = 0;
+topic   = 0;
 counter = 0;
-//ENTRY POINT
+//LOADING DECK
 function loadSelectedTopic() {
 	path_to_load       = "decks/"+"big"+".js"
 	console.log(path_to_load);
@@ -26,10 +27,8 @@ function loadSelectedTopic() {
 	});
 }
 function loadLesson() {
-	console.log("start")
-	console.log(cards);
 	buildDeck();
-	topic_dom.innerText = deckName;
+	//topic_dom.innerText = deckName;
 	//img_dom
 	textSp_dom.innerText     = cards[card_id].sp;
 	textEn_dom.innerText     = cards[card_id].en;
@@ -44,6 +43,11 @@ function loadLesson() {
 		}
 	} else {
 		textTable_dom.style.display="none";
+	}
+	if (cards[card_id].image!==""){
+		rl_img_dom.src=cards[card_id].img;
+	} else {
+		rl_img_dom.src="decks/mock.png";
 	}
 	cards_deck_learn   = new Array();
 	for (i=0;i<cards_deck.length;i++){
@@ -104,6 +108,11 @@ function nextCard() {
 		} else {
 			textTable_dom.style.display="none";
 		}
+		if (cards[card_id].image!==""){
+			rl_img_dom.src=cards[card_id].img;
+		} else {
+			rl_img_dom.src="decks/mock.png";
+		}
 	} else {
 		cards_deck_learn.shift(); //delete the last item, so the array is empty
 	}
@@ -129,4 +138,6 @@ include = function (url, fn) {
 	e.async=true;
 	document.getElementsByTagName("head")[0].appendChild(e);
 };
+//ENTRY POINT
 loadSelectedTopic()
+setInterval(nextCard, 20000);

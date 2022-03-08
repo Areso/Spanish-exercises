@@ -21,15 +21,21 @@ cards = [
 {"sp":"ser",
  "en": "to be",
  "sp_ex": ["Yo soy ingeniero informático. ¿Cuál es tu superpoder?"],
- "sp_en": ["I am a software engineer. What is your superpower?"],
+ "en_en": ["I am a software engineer. What is your superpower?"],
  "ctable": [["soy","eres","es","somos","sois","son"]],
  "img":""},
 {"sp":"estar",
  "en": "to be",
  "sp_ex": ["Yo estoy así así / más o menos. ¿Y tú?","Yo estoy bien/mal/regular. ¿Y tú?", "Yo estoy aqui", "Yo estoy feliz"],
  "en_ex": ["I am so-so / more or less/okay. And you?", "I am fine/bad/okay. And you?", "I am here", "I am happy"],
- "ctable": [["soy","eres","es","somos","sois","son"]],
- "img":""}
+ "ctable": [["est<r>oy</r>","est<r>á</r>s","est<r>á</r>","estamos","est<r>á</r>is","est<r>á</r>n"]],
+ "img":""},
+{"sp":"el invierno",
+ "en": "the winter",
+ "sp_ex": ["El invierno pasado yo fui un asesino"],
+ "en_ex": ["In the last winter I was an assassin"],
+ "ctable": [],
+ "img":""},
 ]
 
 

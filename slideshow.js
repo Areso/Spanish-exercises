@@ -18,10 +18,10 @@ cells.push(document.getElementById("td_ellos_uds"));
 posRe   = 0;
 topic   = 0;
 counter = 0;
+looped  = true;
 //LOADING DECK
 function loadSelectedTopic() {
 	path_to_load       = "decks/"+"big"+".js"
-	console.log(path_to_load);
 	include(path_to_load,function(){
 		loadLesson();
 	});
@@ -32,13 +32,18 @@ function loadLesson() {
 	//img_dom
 	textSp_dom.innerText     = cards[card_id].sp;
 	textEn_dom.innerText     = cards[card_id].en;
-	textSpEx_dom.innerText   = cards[card_id].sp_ex;
-	textEnEx_dom.innerText   = cards[card_id].en_ex;
+	ex_numbers  = cards[card_id].sp_ex.length;
+	ex_no       = random(0,ex_numbers-1);
+	console.log("ex no is ", ex_no);
+	textSpEx_dom.innerText   = cards[card_id].sp_ex[ex_no];
+	textEnEx_dom.innerText   = cards[card_id].en_ex[ex_no];
 	if (cards[card_id].ctable.length !==0) {
 		textTable_dom.style.display="block";
 		it=0;
+		rnd = 0; //present time
+		the_block = cards[card_id]["ctable"][rnd]
 		while (it<6){
-			reddish = cards[card_id]["ctable"][it].replace("<r>","<span class='red'>");
+			reddish = the_block[it].replace("<r>","<span class='red'>");
 			reddish = reddish.replace("</r>","</span>");
 			cells[it].innerHTML=reddish;
 			it+=1
@@ -55,20 +60,17 @@ function loadLesson() {
 	for (i=0;i<cards_deck.length;i++){
 		cards_deck_learn.push(cards_deck[i])
 	}
-	console.log("show me cards_deck_learn");
-	console.log(cards_deck_learn); 
 }
 function buildDeck() {
 	smallPractice      = true;
 	if (smallPractice) {//FOR DEBUG!
-		console.log("build a custom deck to train it");
 		if (cards.length>2) {
 			number_of_cards_to_train = 2;
 		} else {
 			number_of_cards_to_train = cards.length;
 		}
-		console.log("number of custom deck cards");
-		console.log(number_of_cards_to_train);
+		//console.log("number of custom deck cards");
+		//console.log(number_of_cards_to_train);
 		number_cards_in_deck       = 0;
 		cards_deck                 = [];
 		card_id_deck_iterator      = 0;
@@ -89,8 +91,6 @@ function buildDeck() {
 		}
 		card_id = cards_deck[0];
 	}
-	console.log("show me my deck cards_deck");
-	console.log(cards_deck);
 }
 function nextCard() {
 	if (cards_deck_learn.length > 1){
@@ -98,13 +98,18 @@ function nextCard() {
 		card_id = cards_deck_learn[0];
 		textSp_dom.innerText   = cards[card_id].sp;
 		textEn_dom.innerText   = cards[card_id].en;
-		textSpEx_dom.innerText   = cards[card_id].sp_ex;
-		textEnEx_dom.innerText   = cards[card_id].en_ex;
+		ex_numbers  = cards[card_id].sp_ex.length;
+		ex_no       = random(0,ex_numbers-1);
+		console.log("ex no is ", ex_no);
+		textSpEx_dom.innerText   = cards[card_id].sp_ex[ex_no];
+		textEnEx_dom.innerText   = cards[card_id].en_ex[ex_no];
 		if (cards[card_id].ctable.length !==0) {
 			textTable_dom.style.display="block";
 			it=0;
+			rnd = 0; //present time
+			the_block = cards[card_id]["ctable"][rnd]
 			while (it<6){
-				reddish = cards[card_id]["ctable"][it].replace("<r>","<span class='red'>");
+				reddish = the_block[it].replace("<r>","<span class='red'>");
 				reddish = reddish.replace("</r>","</span>");
 				cells[it].innerHTML=reddish;
 				it+=1
@@ -119,12 +124,18 @@ function nextCard() {
 		}
 	} else {
 		cards_deck_learn.shift(); //delete the last item, so the array is empty
+		if (looped){
+			loadLesson();
+		}
 	}
 }
 function check() {
 	
 }
 //HELPERS
+function random(min,max) {
+	return Math.floor((Math.random())*(max-min+1))+min;
+}
 function inArray2(arrayToCheck, valueToCheck) {
 	return arrayToCheck.indexOf(valueToCheck) > -1;
 }

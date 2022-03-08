@@ -17,6 +17,20 @@ cards = [
  "sp_ex": ["¿Qué tanto conozco a mi hijo?", "yo conozco Madrid"],
  "en_ex": ["How good I know my son?", "I know Madrid"],
  "ctable": [["cono<r>z</r>co","conoces","conoce","conocemos","comocéis","comocen"]],
+ "img":""},
+{"sp":"ser",
+ "en": "to be",
+ "sp_ex": ["Yo soy ingeniero informático. ¿Cuál es tu superpoder?"],
+ "sp_en": ["I am a software engineer. What is your superpower?"],
+ "ctable": [["soy","eres","es","somos","sois","son"]],
+ "img":""},
+{"sp":"estar",
+ "en": "to be",
+ "sp_ex": ["Yo estoy así así / más o menos. ¿Y tú?","Yo estoy bien/mal/regular. ¿Y tú?", "Yo estoy aqui", "Yo estoy feliz"],
+ "en_ex": ["I am so-so / more or less/okay. And you?", "I am fine/bad/okay. And you?", "I am here", "I am happy"],
+ "ctable": [["soy","eres","es","somos","sois","son"]],
  "img":""}
 ]
+
+
 

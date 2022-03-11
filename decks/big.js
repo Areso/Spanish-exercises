@@ -10,7 +10,7 @@ cards = [
  "en": "to know (information)",
  "sp_ex": ["yo lo sé"],
  "en_ex": ["I know it"],
- "ctable": [["s<r>é</r>","sabes","sabe","podemos","vostoros","podéis","pueden"]],
+ "ctable": [["s<r>é</r>","sabes","sabe","sabemos","sabéis","saben"]],
  "img":""},
 {"sp":"conocer",
  "en": "to know (person or place)",

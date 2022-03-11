@@ -62,35 +62,37 @@ function loadLesson() {
 	}
 }
 function buildDeck() {
-	smallPractice      = true;
+	smallPractice      = false;
 	if (smallPractice) {//FOR DEBUG!
 		if (cards.length>2) {
 			number_of_cards_to_train = 2;
 		} else {
 			number_of_cards_to_train = cards.length;
 		}
-		//console.log("number of custom deck cards");
-		//console.log(number_of_cards_to_train);
-		number_cards_in_deck       = 0;
-		cards_deck                 = [];
-		card_id_deck_iterator      = 0;
-		while (number_cards_in_deck < number_of_cards_to_train) {
-			roll_the_dice          = Math.floor(Math.random()*cards.length);
-			if (roll_the_dice === 0) {
-				//check whether this card is already added or not?
-				if (!inArray2(cards_deck,card_id_deck_iterator)){
-					cards_deck.push(card_id_deck_iterator);
-					number_cards_in_deck  += 1;
-				}
-			}
-			if (card_id_deck_iterator<cards.length-1){
-				card_id_deck_iterator += 1;
-			} else {
-				card_id_deck_iterator  = 0;
-			} 
-		}
-		card_id = cards_deck[0];
+	} else {
+		number_of_cards_to_train = cards.length;
 	}
+	//console.log("number of custom deck cards");
+	//console.log(number_of_cards_to_train);
+	number_cards_in_deck       = 0;
+	cards_deck                 = [];
+	card_id_deck_iterator      = 0;
+	while (number_cards_in_deck < number_of_cards_to_train) {
+		roll_the_dice          = Math.floor(Math.random()*cards.length);
+		if (roll_the_dice === 0) {
+			//check whether this card is already added or not?
+			if (!inArray2(cards_deck,card_id_deck_iterator)){
+				cards_deck.push(card_id_deck_iterator);
+				number_cards_in_deck  += 1;
+			}
+		}
+		if (card_id_deck_iterator<cards.length-1){
+			card_id_deck_iterator += 1;
+		} else {
+			card_id_deck_iterator  = 0;
+		} 
+	}
+	card_id = cards_deck[0];
 }
 function nextCard() {
 	if (cards_deck_learn.length > 1){

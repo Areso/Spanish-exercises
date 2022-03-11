@@ -21,7 +21,7 @@ cards = [
 {"sp":"ser",
  "en": "to be",
  "sp_ex": ["Yo soy ingeniero informático. ¿Cuál es tu superpoder?"],
- "en_en": ["I am a software engineer. What is your superpower?"],
+ "en_ex": ["I am a software engineer. What is your superpower?"],
  "ctable": [["soy","eres","es","somos","sois","son"]],
  "img":""},
 {"sp":"estar",

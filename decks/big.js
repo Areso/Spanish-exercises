@@ -48,6 +48,12 @@ cards = [
  "en_ex": ["I am going to the beach with you", "you are going to the park with me", "we are going to walk", "we are going to the cinema"],
  "ctable": [["<r>voy</r>","<r>vas</r>","<r>va</r>","<r>vamos</r>","<r>vais</r>","<r>van</r>"]],
  "img":"decks/big_imgs/ir.jpg"},
+{"sp":"decir",
+ "en": "to speak",
+ "sp_ex": ["yo digo sobre el libro"],
+ "en_ex": ["I am telling about the book"],
+ "ctable": [["<r>digo</r>","<r>dices</r>","<r>dice</r>","<r>decimos</r>","<r>decís</r>","<r>dicen</r>"]],
+ "img":""},
 ]
 
 

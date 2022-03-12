@@ -39,7 +39,7 @@ cards = [
 {"sp":"el profesor/la profesora",
  "en": "the professor",
  "sp_ex": ["Yo soy profesora. ¿Cuál es tu superpoder?"],
- "en_ex": ["I am a professor. What is your superpower?"],
+ "en_ex": ["I am a professor(f). What is your superpower?"],
  "ctable": [],
  "img":"decks/big_imgs/profesora.jpg"},
 {"sp":"ir",

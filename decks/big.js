@@ -33,7 +33,7 @@ cards = [
 {"sp":"el invierno",
  "en": "the winter",
  "sp_ex": ["El invierno pasado yo fui un asesino"],
- "en_ex": ["In the last winter I was an assassin"],
+ "en_ex": ["The last winter I was an assassin"],
  "ctable": [],
  "img":"decks/big_imgs/winter.jpg"},
 {"sp":"el profesor/la profesora",

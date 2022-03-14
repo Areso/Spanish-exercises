@@ -2,7 +2,7 @@ deckName = "Big";
 cards = [
 {"sp":"poder (o->ue)",
  "en": "can/might",
- "sp_ex": ["yo puedo ver te"],
+ "sp_ex": ["yo puedo verte"],
  "en_ex": ["I can see you"],
  "ctable": [["p<r>ue</r>do","p<r>ue</r>des","p<r>ue</r>de","podemos","podéis","p<r>ue</r>den"]],
  "img":"decks/big_imgs/poder.jpg"},
@@ -50,8 +50,8 @@ cards = [
  "img":"decks/big_imgs/ir.jpg"},
 {"sp":"decir",
  "en": "to speak",
- "sp_ex": ["yo digo sobre el libro"],
- "en_ex": ["I am telling about the book"],
+ "sp_ex": ["yo digo la verdad","Le digo mi opinio'n"],
+ "en_ex": ["I am telling the truth", "I am telling you all my opinion"],
  "ctable": [["<r>digo</r>","<r>dices</r>","<r>dice</r>","<r>decimos</r>","<r>decís</r>","<r>dicen</r>"]],
  "img":""},
 ]

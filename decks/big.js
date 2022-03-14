@@ -44,7 +44,7 @@ cards = [
  "img":"decks/big_imgs/profesora.jpg"},
 {"sp":"ir",
  "en": "to go",
- "sp_ex": ["yo voy contigo a la playa", "tu vas conmigo al parque", "nosotros vamos a pie", "vamos el cine"],
+ "sp_ex": ["yo voy contigo a la playa", "tu vas conmigo al parque", "nosotros vamos a pie", "vamos al cine"],
  "en_ex": ["I am going to the beach with you", "you are going to the park with me", "we are going to walk", "we are going to the cinema"],
  "ctable": [["<r>voy</r>","<r>vas</r>","<r>va</r>","<r>vamos</r>","<r>vais</r>","<r>van</r>"]],
  "img":"decks/big_imgs/ir.jpg"},

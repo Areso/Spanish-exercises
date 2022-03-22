@@ -72,6 +72,12 @@ cards = [
  "en_ex": ["Do you speak Spanish?", "She speaks English a bit"],
  "ctable": [["hablo","hablas","habla","hablamos","habláis","hablan"]],
  "img":""},
+{"sp":"comer",
+ "en": "to eat",
+ "sp_ex": ["Yo como pollo aunque no como pescado"],
+ "en_ex": ["I eat chiecken though I don't eat fish"],
+ "ctable": [["como","comes","come","comemos","coméis","comen"]],
+ "img":""},
 
 ]
 

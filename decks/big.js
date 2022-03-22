@@ -75,13 +75,7 @@ cards = [
 {"sp":"comer",
  "en": "to eat",
  "sp_ex": ["Yo como pollo aunque no como pescado"],
- "en_ex": ["I eat chiecken though I don't eat fish"],
- "ctable": [["como","comes","come","comemos","coméis","comen"]],
- "img":""},
-{"sp":"comer",
- "en": "to eat",
- "sp_ex": ["Yo como pollo aunque no como pescado"],
- "en_ex": ["I eat chiecken though I don't eat fish"],
+ "en_ex": ["I eat chicken though I don't eat fish"],
  "ctable": [["como","comes","come","comemos","coméis","comen"]],
  "img":""},
 {"sp":"vivir",
@@ -90,6 +84,13 @@ cards = [
  "en_ex": ["You are going to live in a pretty house"],
  "ctable": [["vivo","vives","vive","vivimos","viveís","viven"]],
  "img":""},
+{"sp":"buscar",
+ "en": "to find",
+ "sp_ex": ["Al menos sabemos a quién buscar"],
+ "en_ex": ["At least we know whom to find"],
+ "ctable": [["busco","buscas","busca","buscamos","buscáis","buscan"]],
+ "img":""},
+
 
 ]
 

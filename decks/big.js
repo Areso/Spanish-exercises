@@ -54,6 +54,25 @@ cards = [
  "en_ex": ["I am telling the truth", "I am telling you all my opinion"],
  "ctable": [["<r>digo</r>","<r>dices</r>","<r>dice</r>","<r>decimos</r>","<r>decís</r>","<r>dicen</r>"]],
  "img":""},
+{"sp":"¿Qué tal?",
+ "en": "How are you",
+ "sp_ex": ["¿Qué tal?"],
+ "en_ex": ["How are you?"],
+ "ctable": [],
+ "img":""},
+{"sp":"¿Cómo Estás?",
+ "en": "How are you",
+ "sp_ex": ["¿Cómo Estás?"],
+ "en_ex": ["How are you?"],
+ "ctable": [],
+ "img":""},
+{"sp":"hablar",
+ "en": "to speak",
+ "sp_ex": ["¿Hablas español?", "Ella habla ingles um poco"],
+ "en_ex": ["Do you speak Spanish?", "She speaks English a bit"],
+ "ctable": [["hablo","hablas","habla","hablamos","habláis","hablan"]],
+ "img":""},
+
 ]
 
 

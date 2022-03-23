@@ -90,6 +90,12 @@ cards = [
  "en_ex": ["At least we know whom to find"],
  "ctable": [["busco","buscas","busca","buscamos","buscáis","buscan"]],
  "img":""},
+{"sp":"haber",
+ "en": "to have (to do smth, aux verb)",
+ "sp_ex": ["ya había tenido suficiente"],
+ "en_ex": ["I already have enough(I am tired)"],
+ "ctable": [["he","has","ha/hay","hemos","habéis","han"]],
+ "img":""},
 
 
 ]

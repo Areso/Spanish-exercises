@@ -102,7 +102,12 @@ cards = [
  "en_ex": ["I haveeat chicken though I don't eat fish"],
  "ctable": [["ten<r>g</r>o","t<r>ie</r>nes","t<r>ie</r>ne","tenemos","tenéis","t<r>ie</r>nen"]],
  "img":""},
-
+{"sp":"hacer",
+ "en": "to do, to make",
+ "sp_ex": ["Yo Hago Lo Que Quiera"],
+ "en_ex": ["I do what I want"],
+ "ctable": [["ha<r>go</r>","haces","hace","hacemos","hacéis","hacen"]],
+ "img":""},
 
 ]
 

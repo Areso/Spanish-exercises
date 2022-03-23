@@ -96,6 +96,12 @@ cards = [
  "en_ex": ["I already have enough(I am tired)"],
  "ctable": [["he","has","ha/hay","hemos","habéis","han"]],
  "img":""},
+{"sp":"tener (e->ie)",
+ "en": "to have",
+ "sp_ex": ["Yo tengo oche computadoras"],
+ "en_ex": ["I haveeat chicken though I don't eat fish"],
+ "ctable": [["ten<r>g</r>o","t<r>ie</r>nes","t<r>ie</r>ne","tenemos","tenéis","t<r>ie</r>nen"]],
+ "img":""},
 
 
 ]

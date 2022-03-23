@@ -108,7 +108,18 @@ cards = [
  "en_ex": ["I do what I want"],
  "ctable": [["ha<r>go</r>","haces","hace","hacemos","hacéis","hacen"]],
  "img":""},
-
+{"sp":"ver",
+ "en": "to see",
+ "sp_ex": ["Yo veo tu cara"],
+ "en_ex": ["I see your face"],
+ "ctable": [["v<r>eo</r>","ves","ve","vemos","<r>veis</r>","ven"]],
+ "img":""},
+{"sp":"dar",
+ "en": "to give",
+ "sp_ex": ["Emiliano, le doy mi palabra"],
+ "en_ex": ["Emilian, I give you my word"],
+ "ctable": [["<r>doy</r>","das","de","damos","<r>dais</r>","dan"]],
+ "img":""},
 ]
 
 

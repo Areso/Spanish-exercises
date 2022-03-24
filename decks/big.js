@@ -144,6 +144,12 @@ cards = [
  "en_ex": ["You can skip, but I need to go"],
  "ctable": [["debo","debes","debe","debemos","debéis","deben"]],
  "img":""},
+{"sp":"poner (irr)",
+ "en": "to put, place, set",
+ "sp_ex": ["Acá abajo, yo pongo las reglas", "Yo pongo más dinero aquí que cualquier otro, ok, - así que chiton"],
+ "en_ex": ["Down here, I set the rules", "I put more money there than any other, ok - so shut up"],
+ "ctable": [["<r>pengo</r>","pones","pone","ponemos","ponéis","ponen"]],
+ "img":""},
 ]
 
 

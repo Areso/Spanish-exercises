@@ -130,9 +130,20 @@ cards = [
  "en": "to arrive,come,reach",
  "sp_ex": ["Y él llega tarde"],
  "en_ex": ["And he is [arriving] late"],
- "ctable": [["llego","llegas","llegaa","llegamos","llegáis","llegan"]],
+ "ctable": [["llego","llegas","llega","llegamos","llegáis","llegan"]],
  "img":""},
-
+{"sp":"pasar",
+ "en": "to pas, to spend (time), to happen",
+ "sp_ex": ["Yo paso tiempo libre con ella"],
+ "en_ex": ["I spend free time with her"],
+ "ctable": [["paso","pasas","pasa","pasamos","pasáis","pasan"]],
+ "img":""},
+{"sp":"deber",
+ "en": "to owe, must, should, ought to",
+ "sp_ex": ["Tú puedes faltar, pero yo debo ir"],
+ "en_ex": ["You can skip, but I need to go"],
+ "ctable": [["debo","debes","debe","debemos","debéis","deben"]],
+ "img":""},
 ]
 
 

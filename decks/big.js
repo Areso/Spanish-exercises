@@ -150,6 +150,13 @@ cards = [
  "en_ex": ["Down here, I set the rules", "I put more money there than any other, ok - so shut up"],
  "ctable": [["<r>pengo</r>","pones","pone","ponemos","ponéis","ponen"]],
  "img":""},
+{"sp":"parecer (irr)",
+ "en": "to seem, appear",
+ "sp_ex": ["Bueno, estoy seguro de que parezco cansado", "Que estas diciendo, te parezco cansado?"],
+ "en_ex": ["Okay, I know that I look tired", "Do you think I look tired?"],
+ "ctable": [["<r>parezco</r>","pareces","parece","parecemos","paracéis","paracen"]],
+ "img":""},
+
 ]
 
 

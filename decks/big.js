@@ -126,6 +126,12 @@ cards = [
  "en_ex": ["I wanna a black shirt"],
  "ctable": [["qu<r>ie</r>ro","qu<r>ie</r>res","qu<r>ie</r>re","queremos","queréis","qu<r>ie</r>ren"]],
  "img":""},
+{"sp":"llegar",
+ "en": "to arrive,come,reach",
+ "sp_ex": ["Y él llega tarde"],
+ "en_ex": ["And he is [arriving] late"],
+ "ctable": [["llego","llegas","llegaa","llegamos","llegáis","llegan"]],
+ "img":""},
 
 ]
 

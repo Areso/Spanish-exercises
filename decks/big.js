@@ -120,6 +120,13 @@ cards = [
  "en_ex": ["Emilian, I give you my word"],
  "ctable": [["<r>doy</r>","das","de","damos","<r>dais</r>","dan"]],
  "img":""},
+{"sp":"querer (e-ie)",
+ "en": "to like smth, to love smb",
+ "sp_ex": ["Yo quiero una camisa negra"],
+ "en_ex": ["I wanna a black shirt"],
+ "ctable": [["qu<r>ie</r>ro","qu<r>ie</r>res","qu<r>ie</r>re","queremos","queréis","qu<r>ie</r>ren"]],
+ "img":""},
+
 ]
 
 

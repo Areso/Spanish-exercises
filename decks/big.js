@@ -156,7 +156,18 @@ cards = [
  "en_ex": ["Okay, I know that I look tired", "Do you think I look tired?"],
  "ctable": [["<r>parezco</r>","pareces","parece","parecemos","paracéis","paracen"]],
  "img":""},
-
+{"sp":"quedar",
+ "en": "to stay, remain",
+ "sp_ex": ["Sí, lo que queda de él"],
+ "en_ex": ["Yes, this what is remain from him"],
+ "ctable": [["quedo","quedas","queda","quedamos","quedáis","quedan"]],
+ "img":""},
+{"sp":"creer",
+ "en": "to believe",
+ "sp_ex": ["De veras yo no creo que tu puedas"],
+ "en_ex": ["Really, I don't think you can"],
+ "ctable": [["creo","crees","cree","creemos","creéis","creen"]],
+ "img":""},
 ]
 
 

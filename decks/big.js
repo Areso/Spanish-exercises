@@ -1,5 +1,11 @@
 deckName = "Big";
 cards = [
+ {"sp":"bailar",
+ "en": "dance",
+ "sp_ex": ["me gusta bailar"],
+ "en_ex": ["I like to dance"],
+ "ctable": [["bailo","bailas","baila","bailamos","bailais","bailan"]],
+ "img":"decks/big_imgs/poder.jpg"},
 {"sp":"poder (o->ue)",
  "en": "can/might",
  "sp_ex": ["yo puedo verte"],

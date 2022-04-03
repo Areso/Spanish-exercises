@@ -1,7 +1,7 @@
 # Spanish-exercises
 Spanish exercises for learning the language  
-[Try it out](http://cosmodream.ga/Spanish-exercises/)  
-[Try the carousel out](http://cosmodream.ga/Spanish-exercises/slideshow)
+[Try it out](https://spanish.areso.pro/)  
+[Try the carousel out](https://spanish.areso.pro/slideshow)
 ## Technology stack
 Vanilla JavaScript (ES6), nothing more. No node, npm, server, builder, TS compiler required.  
 Just open index.html in your browser (even from the filesystem).

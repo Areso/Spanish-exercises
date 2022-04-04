@@ -172,7 +172,7 @@ cards = [
  "en": "to put, place, set",
  "sp_ex": ["Acá abajo, yo pongo las reglas", "Yo pongo más dinero aquí que cualquier otro, ok, - así que chiton"],
  "en_ex": ["Down here, I set the rules", "I put more money there than any other, ok - so shut up"],
- "ctable": [["<r>pengo</r>","pones","pone","ponemos","ponéis","ponen"]],
+ "ctable": [["<r>pongo</r>","pones","pone","ponemos","ponéis","ponen"]],
  "img":""},
 {"sp":"parecer (irr)",
  "en": "to seem, appear",

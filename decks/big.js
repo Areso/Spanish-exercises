@@ -157,7 +157,7 @@ cards = [
  "ctable": [["llego","llegas","llega","llegamos","llegáis","llegan"]],
  "img":""},
 {"sp":"pasar",
- "en": "to pas, to spend (time), to happen",
+ "en": "to pass, to spend (time), to happen",
  "sp_ex": ["Yo paso tiempo libre con ella"],
  "en_ex": ["I spend free time with her"],
  "ctable": [["paso","pasas","pasa","pasamos","pasáis","pasan"]],

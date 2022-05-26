@@ -246,6 +246,12 @@ cards = [
  "en_ex": ["Where I can find it?"],
  "ctable": [["enc<r>ue</r>ntro","enc<r>ue</r>ntras","enc<r>ue</r>ntre","encontramos","encontráis","enc<r>ue</r>ntren"]],
  "img":""},
+{"sp":"llevar",
+ "en": "to wear / to take (smth to smwhr)",
+ "sp_ex": ["Yo llevo un pantalon negro y una camisa roja", "Yo llevo las bolsas a la cocina"],
+ "en_ex": ["I wear black pants and a red shirt", "I take the bags to the kitchen"],
+ "ctable": [["llevo","llevas","lleva","llevamos","lleváis","llevan"]],
+ "img":""},
 ]
 
 

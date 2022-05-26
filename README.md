@@ -1,7 +1,7 @@
 # Spanish-exercises
 Spanish exercises for learning the language  
 [Try it out](https://spanish.areso.pro/)  
-[Try the carousel out](https://spanish.areso.pro/slideshow)
+[Try the carousel out](https://spanish.areso.pro/slideshow.html)
 ## Technology stack
 Vanilla JavaScript (ES6), nothing more. No node, npm, server, builder, TS compiler required.  
 Just open index.html in your browser (even from the filesystem).

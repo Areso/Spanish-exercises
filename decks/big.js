@@ -292,7 +292,7 @@ cards = [
  "en": "to jump",
  "sp_ex": ["Yo salto muy alto"],
  "en_ex": ["I jump very high"],
- "ctable": ["salto","saltas","salta","saltamos","saltáis","saltan"],
+ "ctable": [["salto","saltas","salta","saltamos","saltáis","saltan"]],
  "img":""},
 {"sp":"secar",
  "en": "to dry",
@@ -304,7 +304,7 @@ cards = [
  "en": "to turn",
  "sp_ex": ["Yo giro <b>a</b> la izquierda", "Yo giro <b>a</b> la derecha"],
  "en_ex": ["I am turnning left", "I am turning right"],
- "ctable": ["giro","giras","gira","giramos","giráis","giran"],
+ "ctable": [["giro","giras","gira","giramos","giráis","giran"]],
  "img":""},
 ]
 

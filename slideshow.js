@@ -15,10 +15,12 @@ cells.push(document.getElementById("td_you_pl"));
 cells.push(document.getElementById("td_ellos_uds"));
 
 //JS INIT
+started = true;
 posRe   = 0;
 topic   = 0;
 counter = 0;
 looped  = true;
+shown_ar= []
 //LOADING DECK
 function loadSelectedTopic() {
 	path_to_load       = "decks/"+"big"+".js"
@@ -27,6 +29,7 @@ function loadSelectedTopic() {
 	});
 }
 function loadLesson() {
+	shown_ar = [];
 	buildDeck();
 	//topic_dom.innerText = deckName;
 	//img_dom
@@ -56,16 +59,16 @@ function loadLesson() {
 	} else {
 		rl_img_dom.src="decks/mock.png";
 	}
-	cards_deck_learn   = new Array();
+	cards_deck_to_learn   = new Array();
 	for (i=0;i<cards_deck.length;i++){
-		cards_deck_learn.push(cards_deck[i])
+		cards_deck_to_learn.push(cards_deck[i])
 	}
 }
 function buildDeck() {
 	smallPractice      = false;
 	if (smallPractice) {//FOR DEBUG!
-		if (cards.length>2) {
-			number_of_cards_to_train = 2;
+		if (cards.length>3) {
+			number_of_cards_to_train = 3;
 		} else {
 			number_of_cards_to_train = cards.length;
 		}
@@ -94,10 +97,13 @@ function buildDeck() {
 	}
 	card_id = cards_deck[0];
 }
-function nextCard() {
-	if (cards_deck_learn.length > 1){
-		cards_deck_learn.shift();
-		card_id = cards_deck_learn[0];
+function nextCard(prev=false) {
+	if (cards_deck_to_learn.length > 1){
+		if (prev===false){
+			shown_card = cards_deck_to_learn.shift();
+			shown_ar.push(shown_card)
+		} 
+		card_id = cards_deck_to_learn[0];
 		textSp_dom.innerText   = cards[card_id].sp;
 		textEn_dom.innerText   = cards[card_id].en;
 		ex_numbers  = cards[card_id].sp_ex.length;
@@ -111,9 +117,14 @@ function nextCard() {
 			rnd = 0; //present time
 			the_block = cards[card_id]["ctable"][rnd]
 			while (it<6){
-				reddish = the_block[it].replace("<r>","<span class='red'>");
-				reddish = reddish.replace("</r>","</span>");
-				cells[it].innerHTML=reddish;
+				try{
+					reddish = the_block[it].replace("<r>","<span class='red'>");
+					reddish = reddish.replace("</r>","</span>");
+					cells[it].innerHTML=reddish;
+				} catch (error) {
+					console.log(cards[card_id]);
+					console.log(cards[card_id].ctable);
+				}
 				it+=1
 			}
 		} else {
@@ -125,14 +136,33 @@ function nextCard() {
 			rl_img_dom.src="decks/mock.png";
 		}
 	} else {
-		cards_deck_learn.shift(); //delete the last item, so the array is empty
+		cards_deck_to_learn.shift(); //delete the last item, so the array is empty
 		if (looped){
 			loadLesson();
 		}
 	}
 }
+function prevCard() {
+	let insertAtIndex = 0
+	let itemsToRemove = 0
+	lastShown = shown_ar[shown_ar.length-1]
+	cards_deck_to_learn.splice(insertAtIndex, itemsToRemove, lastShown)
+	nextCard(true);
+}
 function check() {
 	
+}
+function stopStart(){
+	if (started) {
+		started = false;
+		clearInterval(mytimer);
+		document.getElementById("btnStartStop").innerHTML="Continue";
+	} else {
+		started = true;
+		nextCard();
+		mytimer = setInterval(nextCard, 20000);
+		document.getElementById("btnStartStop").innerHTML="Stop";
+	}
 }
 //HELPERS
 function random(min,max) {
@@ -157,4 +187,4 @@ include = function (url, fn) {
 };
 //ENTRY POINT
 loadSelectedTopic()
-setInterval(nextCard, 20000);
+mytimer = setInterval(nextCard, 20000);

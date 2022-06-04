@@ -133,7 +133,7 @@ function nextCard(prev=false) {
 		if (cards[card_id].image!==""){
 			rl_img_dom.src=cards[card_id].img;
 		} else {
-			rl_img_dom.src="decks/mock.png";
+			rl_img_dom.src="decks/blank.png";
 		}
 	} else {
 		cards_deck_to_learn.shift(); //delete the last item, so the array is empty
@@ -147,6 +147,7 @@ function prevCard() {
 	let itemsToRemove = 0
 	lastShown = shown_ar[shown_ar.length-1]
 	cards_deck_to_learn.splice(insertAtIndex, itemsToRemove, lastShown)
+	shown_ar.pop()
 	nextCard(true);
 }
 function check() {

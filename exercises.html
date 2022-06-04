@@ -1,0 +1,31 @@
+<html>
+	<head>
+	<link rel="shortcut icon" id="gameIcon" type="image/x-icon" href="favicon-normal.png">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>
+		Mnemonic Learner
+	</title>
+	</head>
+	<body>
+		<div id="divTopicSelector">
+			<select id="topicSelector" size="1" >
+				
+			</select>
+			<button id="btnLoadTopic" onclick="loadSelectedTopic()">Load topic</button>
+		</div>
+		<div id="divTopic" style="display: none">
+			<div id="textTopic">Irregular verbs</div><br>
+			<div id="textTgtLng"></div><br>
+			<div id="textNtvLng"></div><br>
+			<div id="image"></div><br>
+			<textarea id="txtAns" style="display: none"></textarea><br><br>
+			<div id="textRes"></div><br>
+			<button id="btnCheck"  onclick="check()" style="display: none">check</button><br>
+			<button id="btnTrain" onclick="loadTraining()" style="display: none">train</button><br>
+			<button id="btnNextMemo" onclick="nextCard()">next</button><br>
+			<button id="btnNextQst" onclick="nextQuestion()" style="display: none">next</button><br>
+		</div>
+	</body>
+	<script src="topics.js"></script>
+	<script src="engine.js"></script>
+</html>

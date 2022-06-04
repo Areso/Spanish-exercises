@@ -9,56 +9,62 @@
 		.red {
 			color: red;
 		}
+		div { text-align: center; }
+		table { margin-left:auto;margin-right:auto; }
 	</style>
 	</head>
 	<body>
-		<video controls autoplay muted>
-			<source src="blinker.mp4" type="video/mp4">
-		</video>
-		<a href="https://github.com/Areso/Spanish-exercises" >
-				GitHub Homepage</a>
-		<div id="divTopicSelector" style="display: none">
-			<select id="topicSelector" size="1" >
-				
-			</select>
-			<button id="btnLoadTopic" onclick="loadSelectedTopic()">Load topic</button>
-		</div>
-		<div id="divTopic" >
-			
-			<div id="textTopic" style="visibility: hidden"></div><br>
-			<div id="image" ><img id="realImg" width="200px" height="200px" src="decks/mock.png">
-			
-			</div><br>
-			<div id="textSp"></div><br>
-			<div id="textEn"></div><br>
-			<div id="textSpEx"></div><br>
-			<div id="textEnEx"></div><br>
-			<div id="textTbl" style="display: none">
-				<table>
-				<tr>
-					<td>yo</td><td id="td_1st"></td>
-				</tr>
-				<tr>
-					<td>tú</td><td id="td_2nd"></td>
-				</tr>
-				<tr>
-					<td>él/ella/usted</td><td id="td_3rd"></td>
-				</tr>
-				<tr>
-					<td>nosotros</td><td id="td_we"></td>
-				</tr>
-				<tr>
-					<td>vosotros</td><td id="td_you_pl"></td>
-				</tr>
-				<tr>
-					<td>ellos/ustedes</td><td id="td_ellos_uds"></td>
-				</tr>
-				</table>
+		<div>
+			<video controls autoplay muted>
+				<source src="blinker.mp4" type="video/mp4">
+			</video>
+			<a href="https://github.com/Areso/Spanish-exercises" >
+					GitHub Homepage</a> 
+					<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+					<script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'S6S6D33H0');kofiwidget2.draw();</script> 
+			<div id="divTopicSelector" style="display: none">
+				<select id="topicSelector" size="1" >
+					
+				</select>
+				<button id="btnLoadTopic" onclick="loadSelectedTopic()">Load topic</button>
 			</div>
-			<br>
-			<button id="btnPrev" onclick="prevCard()" >Prev</button>--
-			<button id="btnStartStop" onclick="stopStart()">Stop</button>--
-			<button id="btnNext" onclick="nextCard()" >Next</button><br>
+			<div id="divTopic" >
+				
+				<div id="textTopic" style="visibility: hidden"></div><br>
+				<div id="image" ><img id="realImg" width="200px" height="200px" src="decks/mock.png">
+				
+				</div><br>
+				<div id="textSp"></div><br>
+				<div id="textEn"></div><br>
+				<div id="textSpEx"></div><br>
+				<div id="textEnEx"></div><br>
+				<div id="textTbl" style="display: none">
+					<table>
+					<tr>
+						<td>yo</td><td id="td_1st"></td>
+					</tr>
+					<tr>
+						<td>tú</td><td id="td_2nd"></td>
+					</tr>
+					<tr>
+						<td>él/ella/usted</td><td id="td_3rd"></td>
+					</tr>
+					<tr>
+						<td>nosotros</td><td id="td_we"></td>
+					</tr>
+					<tr>
+						<td>vosotros</td><td id="td_you_pl"></td>
+					</tr>
+					<tr>
+						<td>ellos/ustedes</td><td id="td_ellos_uds"></td>
+					</tr>
+					</table>
+				</div>
+				<br>
+				<button id="btnPrev" onclick="prevCard()" >Prev</button>--
+				<button id="btnStartStop" onclick="stopStart()">Stop</button>--
+				<button id="btnNext" onclick="nextCard()" >Next</button><br>
+			</div>
 		</div>
 	</body>
 	<script src="slideshow.js"></script>

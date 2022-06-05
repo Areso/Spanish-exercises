@@ -104,13 +104,13 @@ function nextCard(prev=false) {
 			shown_ar.push(shown_card)
 		} 
 		card_id = cards_deck_to_learn[0];
-		textSp_dom.innerText   = cards[card_id].sp;
-		textEn_dom.innerText   = cards[card_id].en;
+		textSp_dom.innerHTML   = cards[card_id].sp;
+		textEn_dom.innerHTML   = cards[card_id].en;
 		ex_numbers  = cards[card_id].sp_ex.length;
 		ex_no       = random(0,ex_numbers-1);
 		console.log("ex no is ", ex_no);
-		textSpEx_dom.innerText   = cards[card_id].sp_ex[ex_no];
-		textEnEx_dom.innerText   = cards[card_id].en_ex[ex_no];
+		textSpEx_dom.innerHTML   = cards[card_id].sp_ex[ex_no];
+		textEnEx_dom.innerHTML   = cards[card_id].en_ex[ex_no];
 		if (cards[card_id].ctable.length !==0) {
 			textTable_dom.style.display="block";
 			it=0;

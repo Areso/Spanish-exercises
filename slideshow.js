@@ -28,6 +28,10 @@ function loadSelectedTopic() {
 		loadLesson();
 	});
 }
+function randomAB(startwith,endwith){
+  return Math.floor(Math.random()*(endwith+1)+startwith);
+}
+
 function loadLesson() {
 	shown_ar = [];
 	buildDeck();
@@ -37,14 +41,14 @@ function loadLesson() {
 	textEn_dom.innerText     = cards[card_id].en;
 	ex_numbers  = cards[card_id].sp_ex.length;
 	ex_no       = random(0,ex_numbers-1);
-	console.log("ex no is ", ex_no);
 	textSpEx_dom.innerText   = cards[card_id].sp_ex[ex_no];
 	textEnEx_dom.innerText   = cards[card_id].en_ex[ex_no];
 	if (cards[card_id].ctable.length !==0) {
 		textTable_dom.style.display="block";
 		it=0;
-		rnd = 0; //present time
-		the_block = cards[card_id]["ctable"][rnd]
+		rnd = randomAB(0,cards[card_id].ctable.length-1); //present time
+		if (rnd==1){console.log("bingo")}
+		the_block = cards[card_id]["ctable"][rnd];
 		while (it<6){
 			reddish = the_block[it].replace("<r>","<span class='red'>");
 			reddish = reddish.replace("</r>","</span>");
@@ -108,7 +112,6 @@ function nextCard(prev=false) {
 		textEn_dom.innerHTML   = cards[card_id].en;
 		ex_numbers  = cards[card_id].sp_ex.length;
 		ex_no       = random(0,ex_numbers-1);
-		console.log("ex no is ", ex_no);
 		textSpEx_dom.innerHTML   = cards[card_id].sp_ex[ex_no];
 		textEnEx_dom.innerHTML   = cards[card_id].en_ex[ex_no];
 		if (cards[card_id].ctable.length !==0) {

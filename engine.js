@@ -95,8 +95,8 @@ function nextCard() {
 	}
 	} else {
 		cards_deck_learn.shift(); //delete the last item, so the array is empty
-		btnNextMemo.style  = "display: none";
-		btnTrain.style     = "display: block";
+		checkBtn.style  = "display: none";
+		nextBtn.style     = "display: block";
 	}
 }
 function loadTraining() {

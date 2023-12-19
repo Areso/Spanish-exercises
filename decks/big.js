@@ -180,7 +180,7 @@ cards = [
  ],
  "img":"decks/big_imgs/aqui.jpg"},
 
-{"sp":"el invierno",
+{"sp": "el invierno",
  "en": "the winter",
  "constructions": ["default"],
  "sp_ex": [
@@ -189,9 +189,20 @@ cards = [
  "en_ex": [
    {"default":["The last winter I was an assassin"]},
  ],
- "ctable": [
- ],
+ "ctable": [],
  "img":"decks/big_imgs/winter.jpg"},
+
+{"sp": "¿Qué tal?",
+ "en": "How are you",
+ "constructions": ["default"],
+ "sp_ex": [
+   {"default":["¿Qué tal?"]},
+ ],
+ "en_ex": [
+   {"default":["How are you?"]},
+ ],
+ "ctable": [],
+ "img":""},
 
 {"sp": "ser",
  "en": "to be",

@@ -108,6 +108,21 @@ cards = [
  ],
  "img":"decks/big_imgs/conocer.png"},
 
+{"sp": "ir",
+ "en": "to go",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["yo voy contigo a la playa", "tu vas conmigo al parque", "nosotros vamos a pie", "vamos al cine"]},
+ ],
+ "en_ex": [
+   {"presente":["I am going to the beach with you", "you are going to the park with me", "we are going to walk", "we are going to the cinema"]},
+ ],
+ "ctable": [
+   {"presente":["<r>voy</r>","<r>vas</r>","<r>va</r>",
+                "<r>vamos</r>","<r>vais</r>","<r>van</r>"]},
+ ],
+ "img":"decks/big_imgs/ir.jpg"},
+
 {"sp":"estar",
  "en": "to be",
  "constructions": ["presente","pasado"],
@@ -130,6 +145,19 @@ cards = [
               "est<r>uvi</r>mos","est<r>uvi</r>steis","est<r>uvie</r>ron"]},
  ],
  "img":"decks/big_imgs/aqui.jpg"},
+
+{"sp":"el invierno",
+ "en": "the winter",
+ "constructions": ["default"],
+ "sp_ex": [
+   {"default":["El invierno pasado yo fui un asesino"]},
+ ],
+ "en_ex": [
+   {"default":["The last winter I was an assassin"]},
+ ],
+ "ctable": [
+ ],
+ "img":"decks/big_imgs/winter.jpg"},
 
 {"sp": "ser",
  "en": "to be",

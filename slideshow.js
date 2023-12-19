@@ -42,7 +42,7 @@ function updateDOM(){
 	ex_id                    = randomAB(0,ex_qty-1);
 	textSpEx_dom.innerText   = cards[card_id].sp_ex[construction_id][construction][ex_id];
 	textEnEx_dom.innerText   = cards[card_id].en_ex[construction_id][construction][ex_id];
-	if (cards[card_id].ctable[construction_id].length !==0) {
+	if (typeof cards[card_id].ctable[construction_id] !== 'undefined') {
 		textTable_dom.style.display="block";
 		it=0;
 		rnd = randomAB(0,cards[card_id].ctable[construction_id].length-1);

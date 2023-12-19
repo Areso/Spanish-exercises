@@ -80,6 +80,20 @@ cards = [
  ],
  "img":"decks/big_imgs/poder.jpg"},
 
+{"sp": "saber",
+ "en": "to know (information)",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["yo lo sé"]},
+ ],
+ "en_ex": [
+   {"presente":["I know it"]},
+ ],
+ "ctable": [
+   {"presente":["s<r>é</r>","sabes","sabe","sabemos","sabéis","saben"]},
+ ],
+ "img":"decks/big_imgs/saber.png"},
+
 {"sp": "ser",
  "en": "to be",
  "constructions": ["presente","pasado"],

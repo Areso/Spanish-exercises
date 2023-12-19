@@ -37,6 +37,21 @@ cards = [
    {"pasado":[]}
  ],
  "img":"decks/big_imgs/leer.jpg"},
+
+{"sp": "beber",
+ "en": "drink",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Bebo un cáfe por la mañana"]},
+ ],
+ "en_ex": [
+   {"presente":["I drink coffee in the morning"]},
+ ],
+ "ctable": [
+   {"presente":["bebo","bebes","bebe","bebemos","bebeís","beben"]},
+ ],
+ "img":"decks/big_imgs/beber.jpg"},
+
 {"sp": "ser",
  "en": "to be",
  "constructions": ["presente","pasado"],

@@ -1,15 +1,17 @@
 deckName = "Big";
 cards = [
-{"sp":"bailar",
+{"sp": "bailar",
  "en": "dance",
  "constructions": ["presente","pasado"],
  "sp_ex": [
-   {"presente":["Me gusta bailar","Me encanta bailar"]},
+   {"presente":["Me gusta bailar","Me encanta bailar",
+                "Yo bailando con mis amigos"]},
    {"pasado":["Yo bailé ayer muy bien. Ebrio",
               "Yo bailé ayer muy mal. Sobrio"]}
  ],
  "en_ex": [
-   {"presente":["I like to dance", "I love to dance"]},
+   {"presente":["I like to dance", "I love to dance",
+                "I am dancing with my friends"]},
    {"pasado":["Yesterday I danced very well. Drunk", 
               "Yesterday I danced vert badly. Sober"]}
  ],
@@ -18,7 +20,24 @@ cards = [
    {"pasado":["bailé","bailaste","bailó","bailamos","bailasteis","bailaron"]},
  ],
  "img":"decks/big_imgs/bailar.jpg"},
-{"sp":"ser",
+
+{"sp": "leer",
+ "en": "read",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Normalmente antes dormir yo leo"]},
+   {"pasado":[]}
+ ],
+ "en_ex": [
+   {"presente":["I usually read fefore go to sleep "]},
+   {"pasado":[]}
+ ],
+ "ctable": [
+   {"presente":["leo","lees","lee","leemos","leeís","leen"]},
+   {"pasado":[]}
+ ],
+ "img":"decks/big_imgs/leer.jpg"},
+{"sp": "ser",
  "en": "to be",
  "constructions": ["presente","pasado"],
  "sp_ex": [

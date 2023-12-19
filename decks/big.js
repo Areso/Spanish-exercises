@@ -94,6 +94,20 @@ cards = [
  ],
  "img":"decks/big_imgs/saber.png"},
 
+{"sp":"conocer",
+ "en": "to know (person or place)",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["¿Qué tanto conozco a mi hijo?", "yo conozco Madrid"]},
+ ],
+ "en_ex": [
+   {"presente":["How good I know my son?", "I know Madrid"]},
+ ],
+ "ctable": [
+   {"presente":["cono<r>z</r>co","conoces","conoce","conocemos","comocéis","comocen"]},
+ ],
+ "img":"decks/big_imgs/conocer.png"},
+
 {"sp": "ser",
  "en": "to be",
  "constructions": ["presente","pasado"],

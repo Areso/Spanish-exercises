@@ -32,24 +32,16 @@ function randomAB(startwith,endwith){
   return Math.floor(Math.random()*(endwith+1)+startwith);
 }
 
-function loadLesson() {
-	shown_ar = [];
-	buildDeck();
-	//topic_dom.innerText = deckName;
-	//img_dom
+function updateDOM(){
 	textSp_dom.innerText     = cards[card_id].sp;
 	textEn_dom.innerText     = cards[card_id].en;
-
 	constructions_qty        = cards[card_id].constructions.length;
 	construction_id          = randomAB(0,constructions_qty-1);
 	construction             = cards[card_id].constructions[construction_id]
-	console.log(construction)
 	ex_qty                   = cards[card_id].sp_ex[construction_id][construction].length;
 	ex_id                    = randomAB(0,ex_qty-1);
-
 	textSpEx_dom.innerText   = cards[card_id].sp_ex[construction_id][construction][ex_id];
 	textEnEx_dom.innerText   = cards[card_id].en_ex[construction_id][construction][ex_id];
-
 	if (cards[card_id].ctable[construction_id].length !==0) {
 		textTable_dom.style.display="block";
 		it=0;
@@ -70,6 +62,13 @@ function loadLesson() {
 	} else {
 		rl_img_dom.src="decks/mock.png";
 	}
+}
+function loadLesson() {
+	shown_ar = [];
+	buildDeck();
+	//topic_dom.innerText = deckName;
+	//img_dom
+	updateDOM();
 	cards_deck_to_learn   = new Array();
 	for (i=0;i<cards_deck.length;i++){
 		cards_deck_to_learn.push(cards_deck[i])
@@ -115,36 +114,7 @@ function nextCard(prev=false) {
 			shown_ar.push(shown_card)
 		} 
 		card_id = cards_deck_to_learn[0];
-		textSp_dom.innerHTML   = cards[card_id].sp;
-		textEn_dom.innerHTML   = cards[card_id].en;
-		ex_numbers  = cards[card_id].sp_ex.length;
-		ex_no       = random(0,ex_numbers-1);
-		textSpEx_dom.innerHTML   = cards[card_id].sp_ex[ex_no];
-		textEnEx_dom.innerHTML   = cards[card_id].en_ex[ex_no];
-		if (cards[card_id].ctable.length !==0) {
-			textTable_dom.style.display="block";
-			it=0;
-			rnd = 0; //present time
-			the_block = cards[card_id]["ctable"][rnd]
-			while (it<6){
-				try{
-					reddish = the_block[it].replace("<r>","<span class='red'>");
-					reddish = reddish.replace("</r>","</span>");
-					cells[it].innerHTML=reddish;
-				} catch (error) {
-					console.log(cards[card_id]);
-					console.log(cards[card_id].ctable);
-				}
-				it+=1
-			}
-		} else {
-			textTable_dom.style.display="none";
-		}
-		if (cards[card_id].image!==""){
-			rl_img_dom.src=cards[card_id].img;
-		} else {
-			rl_img_dom.src="decks/blank.png";
-		}
+		updateDOM();
 	} else {
 		cards_deck_to_learn.shift(); //delete the last item, so the array is empty
 		if (looped){
@@ -159,9 +129,6 @@ function prevCard() {
 	cards_deck_to_learn.splice(insertAtIndex, itemsToRemove, lastShown)
 	shown_ar.pop()
 	nextCard(true);
-}
-function check() {
-	
 }
 function stopStart(){
 	if (started) {

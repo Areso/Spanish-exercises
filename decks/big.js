@@ -108,6 +108,29 @@ cards = [
  ],
  "img":"decks/big_imgs/conocer.png"},
 
+{"sp":"estar",
+ "en": "to be",
+ "constructions": ["presente","pasado"],
+ "sp_ex": [
+   {"presente":["Yo estoy así así / más o menos. ¿Y tú?",
+                "Yo estoy bien/mal/regular. ¿Y tú?", 
+               "Yo estoy aqui", "Yo estoy feliz"]},
+   {"pasado":  ["Yo estuve mal ayer"]},
+ ],
+ "en_ex": [
+   {"presente":["I am so-so / more or less/okay. And you?", 
+                "I am fine/bad/okay. And you?", 
+                "I am here", "I am happy"]},
+   {"pasado":  ["I was bad [sick] yesterday"]},
+ ],
+ "ctable": [
+   {"presente":["esto<r>y</r>","est<r>á</r>s","est<r>á</r>",
+                "estamos","estáis","est<r>á</r>n"]},
+   {"pasado":["est<r>uve</r>","est<r>uvi</r>ste","est<r>uvo</r>",
+              "est<r>uvi</r>mos","est<r>uvi</r>steis","est<r>uvie</r>ron"]},
+ ],
+ "img":"decks/big_imgs/aqui.jpg"},
+
 {"sp": "ser",
  "en": "to be",
  "constructions": ["presente","pasado"],

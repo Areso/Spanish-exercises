@@ -66,6 +66,19 @@ cards = [
  ],
  "img":"decks/big_imgs/cocinar.jpg"},
 
+{"sp": "poder (o->ue)",
+ "en": "can/might",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["yo puedo verte"]},
+ ],
+ "en_ex": [
+   {"presente":["I can see you"]},
+ ],
+ "ctable": [
+   {"presente":["p<r>ue</r>do","p<r>ue</r>des","p<r>ue</r>de","podemos","podéis","p<r>ue</r>den"]},
+ ],
+ "img":"decks/big_imgs/poder.jpg"},
 
 {"sp": "ser",
  "en": "to be",

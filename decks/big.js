@@ -13,7 +13,7 @@ cards = [
    {"presente":["I like to dance", "I love to dance",
                 "I am dancing with my friends"]},
    {"pasado":["Yesterday I danced very well. Drunk", 
-              "Yesterday I danced vert badly. Sober"]}
+              "Yesterday I danced very badly. Sober"]}
  ],
  "ctable": [
    {"presente":["bailo","bailas","baila","bailamos","bailáis","bailan"]},
@@ -137,6 +137,25 @@ cards = [
                 "decimos","decís","d<r>i</r>cen"]},
  ],
  "img":""},
+
+{"sp": "oír",
+ "en": "to hear",
+ "constructions": ["presente","pasado"],
+ "sp_ex": [
+   {"presente":["Yo oigo una campana"]},
+   {"pasado":["Yo oí una campana ayer"]},
+ ],
+ "en_ex": [
+   {"presente":["I hear a bell"]},
+   {"pasado":["I heard a bell yesterday"]},
+ ],
+ "ctable": [
+   {"presente":["o<r>ig</r>o","o<r>y</r>es","o<r>y</r>e",
+                "o<r>í</r>mos","oís","o<r>y</r>en"]},
+   {"pasado":  ["oí","o<r>í</r>ste","o<r>y</r>ó","o<r>í</r>mos",
+                "o<r>í</r>steis","o<r>y</r>eron"]},
+ ],
+ "img":"decks/big_imgs/campana.jpg"},
 
 {"sp":"estar",
  "en": "to be",

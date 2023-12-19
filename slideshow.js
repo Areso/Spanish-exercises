@@ -39,16 +39,23 @@ function loadLesson() {
 	//img_dom
 	textSp_dom.innerText     = cards[card_id].sp;
 	textEn_dom.innerText     = cards[card_id].en;
-	ex_numbers  = cards[card_id].sp_ex.length;
-	ex_no       = random(0,ex_numbers-1);
-	textSpEx_dom.innerText   = cards[card_id].sp_ex[ex_no];
-	textEnEx_dom.innerText   = cards[card_id].en_ex[ex_no];
-	if (cards[card_id].ctable.length !==0) {
+
+	constructions_qty        = cards[card_id].constructions.length;
+	construction_id          = randomAB(0,constructions_qty-1);
+	construction             = cards[card_id].constructions[construction_id]
+	console.log(construction)
+	ex_qty                   = cards[card_id].sp_ex[construction_id][construction].length;
+	ex_id                    = randomAB(0,ex_qty-1);
+
+	textSpEx_dom.innerText   = cards[card_id].sp_ex[construction_id][construction][ex_id];
+	textEnEx_dom.innerText   = cards[card_id].en_ex[construction_id][construction][ex_id];
+
+	if (cards[card_id].ctable[construction_id].length !==0) {
 		textTable_dom.style.display="block";
 		it=0;
-		rnd = randomAB(0,cards[card_id].ctable.length-1); //present time
-		if (rnd==1){console.log("bingo")}
-		the_block = cards[card_id]["ctable"][rnd];
+		rnd = randomAB(0,cards[card_id].ctable[construction_id].length-1);
+		if (rnd===1){console.log("bingo")}
+		the_block = cards[card_id]["ctable"][construction_id][construction];
 		while (it<6){
 			reddish = the_block[it].replace("<r>","<span class='red'>");
 			reddish = reddish.replace("</r>","</span>");

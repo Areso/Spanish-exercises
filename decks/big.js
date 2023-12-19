@@ -123,6 +123,21 @@ cards = [
  ],
  "img":"decks/big_imgs/ir.jpg"},
 
+{"sp": "decir",
+ "en": "to speak",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["yo digo la verdad","Le digo mi opinio'n"]},
+ ],
+ "en_ex": [
+   {"presente":["I am telling the truth", "I am telling you all my opinion"]},
+ ],
+ "ctable": [
+   {"presente":["d<r>ig</r>o","d<r>i</r>ces","d<r>i</r>ce",
+                "decimos","decís","d<r>i</r>cen"]},
+ ],
+ "img":""},
+
 {"sp":"estar",
  "en": "to be",
  "constructions": ["presente","pasado"],

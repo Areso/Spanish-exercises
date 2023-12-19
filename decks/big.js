@@ -52,6 +52,21 @@ cards = [
  ],
  "img":"decks/big_imgs/beber.jpg"},
 
+{"sp": "cocinar",
+ "en": "cook",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Sé cocinar platos típicos de Rusia"]},
+ ],
+ "en_ex": [
+   {"presente":["I can cook traditional Russian dishes"]},
+ ],
+ "ctable": [
+   {"presente":["cocino","cocinas","cocina","cocinamos","cocináis","cocinan"]},
+ ],
+ "img":"decks/big_imgs/cocinar.jpg"},
+
+
 {"sp": "ser",
  "en": "to be",
  "constructions": ["presente","pasado"],

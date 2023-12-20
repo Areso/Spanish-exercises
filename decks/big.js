@@ -294,6 +294,52 @@ cards = [
  ],
  "img":""},
 
+{"sp": "deber",
+ "en": "to owe, must, should, ought to",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Tú puedes faltar, pero yo debo ir"]},
+ ],
+ "en_ex": [
+   {"presente":["You can skip, but I need to go"]},
+ ],
+ "ctable": [
+   {"presente":["debo","debes","debe","debemos","debéis","deben"]},
+ ],
+ "img":""},
+
+{"sp": "poner (irr)",
+ "en": "to put, place, set",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Acá abajo, yo pongo las reglas", 
+                "Yo pongo más dinero aquí que cualquier otro, ok, - así que chiton"]},
+ ],
+ "en_ex": [
+   {"presente":["Down here, I set the rules", 
+                "I put more money there than any other, ok - so shut up"]},
+ ],
+ "ctable": [
+   {"presente":["<r>pongo</r>","pones","pone","ponemos","ponéis","ponen"]},
+ ],
+ "img":""},
+
+{"sp": "parecer (irr)",
+ "en": "to seem, appear",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Bueno, estoy seguro de que parezco cansado", 
+                "Que estas diciendo, te parezco cansado?"]},
+ ],
+ "en_ex": [
+   {"presente":["Okay, I know that I look tired", 
+                "Do you think I look tired?"]},
+ ],
+ "ctable": [
+   {"presente":["pare<r>z</r>co","pareces","parece","parecemos","paracéis","paracen"]}
+ ],
+ "img":""},
+
 {"sp": "oír",
  "en": "to hear",
  "constructions": ["presente","pasado"],

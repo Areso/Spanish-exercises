@@ -138,6 +138,62 @@ cards = [
  ],
  "img":""},
 
+{"sp": "hablar",
+ "en": "to speak",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["¿Hablas español? Sí", "Ella habla ingles um poco", "¿Hay alguien que hable español?", "¿Alguno de ustedes habla español?"]},
+ ],
+ "en_ex": [
+   {"presente":["Do you speak Spanish? Yes", "She speaks English a bit", "Do we have anyone who can speak Spanish?","Either one of you guys speak Spanish?"]},
+ ],
+ "ctable": [
+   {"presente":["hablo","hablas","habla","hablamos","habláis","hablan"]},
+ ],
+ "img":""},
+
+{"sp": "comer",
+ "en": "to eat",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Yo como pollo aunque no como pescado"]},
+ ],
+ "en_ex": [
+   {"presente":["I eat chicken though I don't eat fish"]},
+ ],
+ "ctable": [
+   {"presente":["como","comes","come","comemos","coméis","comen"]},
+ ],
+ "img":""},
+
+{"sp": "vivir",
+ "en": "to live",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Tú vas a vivir en una casa bonita"]},
+ ],
+ "en_ex": [
+   {"presente":["You are going to live in a pretty house"]},
+ ],
+ "ctable": [
+   {"presente":["vivo","vives","vive","vivimos","viveís","viven"]},
+ ],
+ "img":""},
+
+{"sp": "buscar",
+ "en": "to find / to search",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Al menos sabemos a quién buscar"]},
+ ],
+ "en_ex": [
+   {"presente":["At least we know whom to find"]},
+ ],
+ "ctable": [
+   {"presente":["busco","buscas","busca","buscamos","buscáis","buscan"]},
+ ],
+ "img":""},
+
 {"sp": "oír",
  "en": "to hear",
  "constructions": ["presente","pasado"],
@@ -155,7 +211,7 @@ cards = [
    {"pasado":  ["oí","o<r>í</r>ste","o<r>y</r>ó","o<r>í</r>mos",
                 "o<r>í</r>steis","o<r>y</r>eron"]},
  ],
- "img":"decks/big_imgs/campana.jpg"},
+ "img":"decks/big_imgs/campana.png"},
 
 {"sp":"estar",
  "en": "to be",
@@ -203,6 +259,18 @@ cards = [
  ],
  "ctable": [],
  "img":""},
+
+{"sp":"¿Cómo estás?",
+ "en": "How are you",
+ "constructions": ["default"],
+ "sp_ex": [
+  {"default":["¿Cómo estás?"]},
+],
+"en_ex": [
+  {"default":["How are you?"]},
+],
+"ctable": [],
+"img":""},
 
 {"sp": "ser",
  "en": "to be",

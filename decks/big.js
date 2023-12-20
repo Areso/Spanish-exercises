@@ -266,6 +266,34 @@ cards = [
  ],
  "img":""},
 
+{"sp": "llegar",
+ "en": "to arrive,come,reach",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Y él llega tarde"]},
+ ],
+ "en_ex": [
+   {"presente":["And he is [arriving] late"]},
+ ],
+ "ctable": [
+   {"presente":["llego","llegas","llega","llegamos","llegáis","llegan"]},
+ ],
+ "img":""},
+
+{"sp": "pasar",
+ "en": "to pass, to spend (time), to happen",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Yo paso tiempo libre con ella"]},
+ ],
+ "en_ex": [
+   {"presente":["I spend free time with her"]},
+ ],
+ "ctable": [
+   {"presente":["paso","pasas","pasa","pasamos","pasáis","pasan"]},
+ ],
+ "img":""},
+
 {"sp": "oír",
  "en": "to hear",
  "constructions": ["presente","pasado"],

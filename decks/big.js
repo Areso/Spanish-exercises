@@ -233,7 +233,36 @@ cards = [
    {"presente":["I see your face"]},
  ],
  "ctable": [
-   {"presente":["v<r>eo</r>","ves","ve","vemos","<r>veis</r>","ven"]},
+   {"presente":["v<r>e</r>o","ves","ve","vemos","v<r>e</r>is","ven"]},
+ ],
+ "img":""},
+
+{"sp": "dar",
+ "en": "to give",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Emiliano, le doy mi palabra"]},
+ ],
+ "en_ex": [
+   {"presente":["Emilian, I give you my word"]},
+ ],
+ "ctable": [
+   {"presente":["<r>doy</r>","das","de","damos","<r>dais</r>","dan"]},
+ ],
+ "img":""},
+
+{"sp": "querer (e-ie)",
+ "en": "to like smth, to love smb",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Yo quiero una camisa negra"]},
+ ],
+ "en_ex": [
+   {"presente":["I wanna a black shirt"]},
+ ],
+ "ctable": [
+   {"presente":["qu<r>ie</r>ro","qu<r>ie</r>res","qu<r>ie</r>re",
+                "queremos","queréis","qu<r>ie</r>ren"]},
  ],
  "img":""},
 

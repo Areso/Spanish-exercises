@@ -194,6 +194,49 @@ cards = [
  ],
  "img":""},
 
+{"sp": "haber",
+ "en": "to have (to do smth, aux verb)",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Hay una cama en mi habitacion"]},
+ ],
+ "en_ex": [
+   {"presente":["There is one bed in my room"]},
+ ],
+ "ctable": [
+   {"presente":["h<r>e</r>","ha<r>s</r>","h<r>a</r>/ha<r>y</r>",
+                "h<r>e</r>mos","habéis","ha<r>n</r>"]},
+ ],
+ "img":""},
+
+{"sp": "hacer",
+ "en": "to do, to make",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Yo hago lo que quiero"]},
+ ],
+ "en_ex": [
+   {"presente":["I do what I want"]},
+ ],
+ "ctable": [
+   {"presente":["ha<r>go</r>","haces","hace","hacemos","hacéis","hacen"]},
+  ],
+ "img":""},
+
+{"sp": "ver",
+ "en": "to see",
+ "constructions": ["presente"],
+ "sp_ex": [
+   {"presente":["Yo veo tu cara"]},
+ ],
+ "en_ex": [
+   {"presente":["I see your face"]},
+ ],
+ "ctable": [
+   {"presente":["v<r>eo</r>","ves","ve","vemos","<r>veis</r>","ven"]},
+ ],
+ "img":""},
+
 {"sp": "oír",
  "en": "to hear",
  "constructions": ["presente","pasado"],

@@ -125,16 +125,20 @@ cards = [
 
 {"sp": "decir",
  "en": "to speak",
- "constructions": ["presente"],
+ "constructions": ["presente","pasado"],
  "sp_ex": [
    {"presente":["yo digo la verdad","Le digo mi opinio'n"]},
+   {"pasado":["Ya yo dije este ayer"]}
  ],
  "en_ex": [
    {"presente":["I am telling the truth", "I am telling you all my opinion"]},
+   {"pasado":["I told that already yesterday"]}
  ],
  "ctable": [
    {"presente":["d<r>ig</r>o","d<r>i</r>ces","d<r>i</r>ce",
                 "decimos","decís","d<r>i</r>cen"]},
+   {"pasado":["d<r>ije</r>","d<r>ij</r>iste","d<r>ijo</r>",
+              "d<r>ij</r>imos","d<r>ij</r>isteis","d<r>ij</r>eron"]}
  ],
  "img":""},
 

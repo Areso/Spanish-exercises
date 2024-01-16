@@ -54,15 +54,23 @@ cards = [
 
 {"sp": "cocinar",
  "en": "cook",
- "constructions": ["presente"],
+ "constructions": ["presente", "pasado","pretperfecto"],
+ "constructions_syns": ["presente", "pasado","preterito perfecto (ind)"],
  "sp_ex": [
-   {"presente":["Sé cocinar platos típicos de Rusia"]},
+   {"presente":["Yo sé (como) cocinar platos típicos de Rusia"]},
+   {"pasado":["Yo cociné la carne ayer. ¡Muy richo!"]},
+   {"pretperfecto":["Hoy mañana he cocinado la ensalada"]},
  ],
  "en_ex": [
    {"presente":["I can cook traditional Russian dishes"]},
+   {"pasado":["I cooked the meat yesterday. Very tasty!"]},
+   {"pretperfecto":["Today morning I cooked the salad"]},
  ],
  "ctable": [
    {"presente":["cocino","cocinas","cocina","cocinamos","cocináis","cocinan"]},
+   {"pasado":["cociné","cocinaste","cocinó","cocinamos","cocinasteis","cocinaron"]},
+   {"pretperfecto":["he cocinado","has cocinado", "ha cocinado",
+  "hemos cocinado","habéis cocinado","han cocinado"]},
  ],
  "img":"decks/big_imgs/cocinar.jpg"},
 
@@ -158,29 +166,45 @@ cards = [
 
 {"sp": "comer",
  "en": "to eat",
- "constructions": ["presente"],
+ "constructions": ["presente", "pasado","pretperfecto"],
+ "constructions_syns": ["presente", "pasado","preterito perfecto (ind)"],
  "sp_ex": [
    {"presente":["Yo como pollo aunque no como pescado"]},
+   {"pasado":["Yo comí con mi amiga en un restaraunte ayer"]},
+   {"pretperfecto":["Hoy he comido paella"]},
  ],
  "en_ex": [
    {"presente":["I eat chicken though I don't eat fish"]},
+   {"pasado":["I ate with my friend in a restaraunt yesterday"]},
+   {"pretperfecto":["Today I ate a paella"]},
  ],
  "ctable": [
    {"presente":["como","comes","come","comemos","coméis","comen"]},
+   {"pasado":["comí","comiste","comió","comimos","comisteis","comieron"]},
+   {"pretperfecto":["he comido","has comido","ha comido",
+  "hemos comido","habéis comido","han comido"]},
  ],
  "img":""},
 
 {"sp": "vivir",
  "en": "to live",
- "constructions": ["presente"],
+ "constructions": ["presente", "pasado","pretperfecto"],
+ "constructions_syns": ["presente", "pasado","preterito perfecto (ind)"],
  "sp_ex": [
    {"presente":["Tú vas a vivir en una casa bonita"]},
+   {"pasado":["Yo viví aqui hace 2 años"]},
+   {"pretperfecto":["Este año he vivido en Pafos"]}
  ],
  "en_ex": [
    {"presente":["You are going to live in a pretty house"]},
+   {"pasado":["I lived here 2 years ago"]},
+   {"pretperfecto":["This year I lived in Pafos"]}
  ],
  "ctable": [
    {"presente":["vivo","vives","vive","vivimos","viveís","viven"]},
+   {"pasado":["viví","viviste","vivió","vivimos","vivisteis","vivieron"]},
+   {"pretperfecto":["he vivido","has vivido","ha vivdo",
+   "hemos vivido","habéis vivido", "han vivido"]}
  ],
  "img":""},
 

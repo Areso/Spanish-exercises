@@ -23,13 +23,29 @@ cards = [
 
 {"sp": "leer",
  "en": "read",
- "constructions": ["presente"],
+ "constructions": ["presente","pasado"],
+ "regular": [{"presente":"yes"},
+             {"pasado":"no"}],
  "sp_ex": [
-   {"presente":["Normalmente antes dormir yo leo"]},
+   {"presente":["Normalmente antes dormir yo leo",
+                "¿Lees mucho? -Muy a menudo",
+                "¿Lees mucho? -Con (mucha) frecuencia",
+                "¿Lees mucho? -Seguido",
+                "¿Lees mucho? -Regular",
+                "¿Lees mucho? -Muy frecuentemente",
+                "¿Me lees un cuento de hadas? -A la hora regular"
+              ]},
    {"pasado":[]}
  ],
  "en_ex": [
-   {"presente":["I usually read fefore go to sleep "]},
+   {"presente":["I usually read fefore go to sleep",
+                "Do you read much? Very often",
+                "Do you read much? (Very) often",
+                "Do you read much? I have a habit",
+                "Do you read much? I have a habit",
+                "Do you read much? Very often",
+                "Will you read me a fiary tale? At usual time!"
+              ]},
    {"pasado":[]}
  ],
  "ctable": [
@@ -132,7 +148,7 @@ cards = [
  "img":"decks/big_imgs/ir.jpg"},
 
 {"sp": "decir",
- "en": "to speak",
+ "en": "to say, to tell",
  "constructions": ["presente","pasado"],
  "sp_ex": [
    {"presente":["yo digo la verdad","Le digo mi opinio'n"]},
@@ -426,10 +442,12 @@ cards = [
  "en": "How are you",
  "constructions": ["default"],
  "sp_ex": [
-   {"default":["¿Qué tal?"]},
+   {"default":["¿Qué tal? -Regular",
+               "¿Qué tal? -Mas o menos"]},
  ],
  "en_ex": [
-   {"default":["How are you?"]},
+   {"default":["How are you?-As usual,more or less",
+               "How are you?-More or less"]},
  ],
  "ctable": [],
  "img":""},
